@@ -69,66 +69,7 @@
 
 
 
-    <script language=JavaScript>
-//        <!-- [Step1]: 在此能够设置雨滴的多少 -->
-        var rainsize = 40;
-        <!-- [Step2]: 这里可以更改下雨的速度，数值大速度慢 -->
-        var speed = 10;
-        var x = new Array();
-        var y = new Array();
-        var r = new Array();
-        var cx = new Array();
-        var cy = new Array();
-        var doc_width = document.body.clientWidth;
-        var doc_height = document.body.clientHeight;
-        for(i=0; i<rainsize; ++i) {
-            initRain();
-            if (i == 0) {
-                document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
-                document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
-                document.write("visible; TOP: 15px; LEFT: 15px;\"><font color=\"blue\">");
-                document.write(",</font></div>"); }
-            else {
-                document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
-                document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
-                document.write("visible; TOP: 15px; LEFT: 15px;\"><font color=\"blue\">");
-                document.write(",.</font></div>");  }
-        }
-        function initRain() {
-            a = 6;
-            r[i] = 1;
-            sn = Math.sin(a);
-            cs = Math.cos(a);
-            cx[i] = Math.random() * doc_width + 1;
-            cy[i] = Math.random() * doc_height + 1;
-            x[i] = r[i] * sn + cx[i];
-            y[i] = cy[i];
-        }
-        function raindropIE() {
-            for (i = 0; i < rainsize; ++ i) {
-                updateRain();
-                if ((x[i] <= 1) || (x[i] >= (doc_width - 20)) || (y[i] >= (doc_height - 20))) {
-                    makeRain();
-                    doc_width = document.body.clientWidth;
-                    doc_height = document.body.clientHeight; }
-                document.all["dot"+i].style.pixelTop = y[i];
-                document.all["dot"+i].style.pixelLeft = x[i]; }
-            setTimeout("raindropIE()", speed);
-        }
-        function updateRain() {
-            r[i] += 10;
-            x[i] = r[i] * sn + cx[i];
-            y[i] = r[i] * cs + cy[i];
-        }
-        function makeRain() {
-            r[i] = 1;
-            cx[i] = Math.random() * doc_width + 1;
-            cy[i] = 1;
-            x[i] = r[i] * sn + cx[i];
-            y[i] = r[i] * cs + cy[i];
-        }
-        raindropIE();
-    </script>
+
 
 
 
@@ -146,6 +87,99 @@
 <body class="home-template">
 -->
 <body id="index" class="lightnav animsition">
+
+<!--「背景特效-櫻花落下」程式碼的開始 -->
+
+<SCRIPT Language="JavaScript">
+    //Pre-load your image below!
+    grphcs=new Array(6)
+    Image0=new Image();
+    Image0.src=grphcs[0]="images/js2-4.gif";  //指定這個特效所用的圖片
+    Image1=new Image();
+    Image1.src=grphcs[1]="images/js2-5.gif"  //指定這個特效所用的圖片
+    Image2=new Image();
+    Image2.src=grphcs[2]="images/js2-6.gif"  //指定這個特效所用的圖片
+    Image3=new Image();
+    Image3.src=grphcs[3]="images/js2-7.gif"  //指定這個特效所用的圖片
+    Image4=new Image();
+    Image4.src=grphcs[4]="images/js2-5.gif"  //指定這個特效所用的圖片
+    Image5=new Image();
+    Image5.src=grphcs[5]="images/js2-6.gif"  //指定這個特效所用的圖片
+
+    <!--以上設定花朵的圖檔名稱-->
+
+    Amount=4; //Smoothness depends on image file size, the smaller the size the more you can use!
+    Ypos=new Array();
+    Xpos=new Array();
+    Speed=new Array();
+    Step=new Array();
+    Cstep=new Array();
+    ns=(document.layers)?1:0;
+    ns6=(document.getElementById&&!document.all)?1:0;
+
+    if (ns){
+        for (i = 0; i < Amount; i++){
+            var P=Math.floor(Math.random()*grphcs.length);
+            rndPic=grphcs[P];
+            document.write("<LAYER NAME='sn"+i+"' LEFT=0 TOP=0><img src="+rndPic+"></LAYER>");
+        }
+    }
+    else{
+        document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+        for (i = 0; i < Amount; i++){
+            var P=Math.floor(Math.random()*grphcs.length);
+            rndPic=grphcs[P];
+            document.write('<img id="si'+i+'" src="'+rndPic+'" style="position:absolute;top:0px;left:0px">');
+        }
+        document.write('</div></div>');
+    }
+    WinHeight=(ns||ns6)?window.innerHeight:window.document.body.clientHeight;
+    WinWidth=(ns||ns6)?window.innerWidth-70:window.document.body.clientWidth;
+    for (i=0; i < Amount; i++){
+        Ypos[i] = Math.round(Math.random()*WinHeight);
+        Xpos[i] = Math.round(Math.random()*WinWidth);
+        Speed[i]= Math.random()*5+3;
+        Cstep[i]=0;
+        Step[i]=Math.random()*0.1+0.05;
+    }
+    function fall(){
+        var WinHeight=(ns||ns6)?window.innerHeight:window.document.body.clientHeight;
+        var WinWidth=(ns||ns6)?window.innerWidth-70:window.document.body.clientWidth;
+        var hscrll=(ns||ns6)?window.pageYOffset:document.body.scrollTop;
+        var wscrll=(ns||ns6)?window.pageXOffset:document.body.scrollLeft;
+        for (i=0; i < Amount; i++){
+            sy = Speed[i]*Math.sin(90*Math.PI/180);
+            sx = Speed[i]*Math.cos(Cstep[i]);
+            Ypos[i]+=sy;
+            Xpos[i]+=sx;
+            if (Ypos[i] > WinHeight){
+                Ypos[i]=-60;
+                Xpos[i]=Math.round(Math.random()*WinWidth);
+                Speed[i]=Math.random()*5+3;
+            }
+            if (ns){
+                document.layers['sn'+i].left=Xpos[i];
+                document.layers['sn'+i].top=Ypos[i]+hscrll;
+            }
+            else if (ns6){
+                document.getElementById("si"+i).style.left=Math.min(WinWidth,Xpos[i]);
+                document.getElementById("si"+i).style.top=Ypos[i]+hscrll;
+            }
+            else{
+                eval("document.all.si"+i).style.left=Xpos[i];
+                eval("document.all.si"+i).style.top=Ypos[i]+hscrll;
+            }
+            Cstep[i]+=Step[i];
+        }
+        setTimeout('fall()',15);
+    }
+
+    window.onload=fall
+</SCRIPT>
+
+
+<!-- 這是「背景特效-櫻花落下」程式碼的結束-->
+
 
 <!-- ============================ Off-canvas navigation =========================== -->
 
@@ -252,12 +286,12 @@
         <br>
         <h1>关于我</h1>
         <ul>
-            <li><h3>姓    名：张维琴</h3>
-            </li>
-            <li><h3>出生年月：1994年9月</h3>
-            </li>
-            <li><h3>家乡：四川省广安市</h3>
-            </li>
+            <!--<li><h3>姓    名：张维琴</h3>-->
+            <!--</li>-->
+            <!--<li><h3>出生年月：1994年9月</h3>-->
+            <!--</li>-->
+            <!--<li><h3>家乡：四川省广安市</h3>-->
+            <!--</li>-->
             <li><h3>现住地：辽宁省大连市大连交通大学</h3>
             </li>
             <li><h3>专业：软件+会计</h3>
