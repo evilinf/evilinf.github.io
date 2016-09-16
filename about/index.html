@@ -79,7 +79,25 @@
 
 
 
-    <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+    <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}
+    #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+
+    /* ---- stats.js ---- */
+
+
+    .js-count-particles{
+        font-size: 1.1em;
+    }
+    </style>
 </head>
 
 <!--
@@ -88,10 +106,19 @@
 <body id="index" class="lightnav animsition">
 
 <!--特效开始-->
+<!--<div id="particles-js"></div>-->
+
+<!--<script src="particles.js"></script>-->
+<!--<script src="app.js"></script>-->
 <div id="particles-js"></div>
 
-<script src="particles.js"></script>
-<script src="app.js"></script>
+<!-- stats - count particles -->
+<div class="count-particles">
+    <span class="js-count-particles">
+        <script src="particles.min.js"></script>
+        <script src="particles.js"></script>
+    </span> particles
+</div>
 
 <!--特效结束-->
 
