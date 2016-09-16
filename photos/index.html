@@ -80,7 +80,55 @@
 
 
 
-    <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+    <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}
+    .article {
+        display: block;
+        margin: 0 0 30px 0;
+        padding: 12px;
+        background: white;
+        border-radius: 3px;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+        transition: all 220ms;
+    }
+    .article:hover {
+        box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.1);
+        transform: translateY(-5px);
+        transition: all 220ms;
+    }
+    .article > img {
+        display: block;
+        width: 100%;
+        margin: 0 0 24px 0;
+    }
+    .article h2 {
+        text-align: center;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 0 0 12px 0;
+    }
+
+    .wall {
+        display: block;
+        position: relative;
+    }
+    .wall-column {
+        display: block;
+        position: relative;
+        /*width: 33.333333%;*/
+        width: 25%;
+        float: left;
+        padding: 0 12px;
+        box-sizing: border-box;
+    }
+
+    img{
+        max-height:720px;
+        max-width:640px;
+        /*width:expression(this.width > 640 && this.height < this.width ? 640: true);*/
+        /*height:expression(this.height > 720 ? 720: true);*/
+        border-radius:0px;
+    }
+    </style>
 </head>
 
 <!--
@@ -211,10 +259,63 @@
     <article class="htmleaf-container">
         <div class="wall">
             <div class="wall-column">
-                <!-- 画廊图片库 -->
-                <div class="article" id="img1">
-                    <img src="img1.jpg">
-                    <h2>大连星海</h2>
+                <div class="article" id="img11">
+                    <img src="img11.jpg">
+                    <h2>大连.星海</h2>
+                </div>
+                <div class="article" id="img12">
+                    <img src="img12.jpg">
+                    <h2>旅顺.海星</h2>
+                </div>
+                <div class="article" id="img13">
+                    <img src="img13.jpg">
+                    <h2>四川.广安</h2>
+                </div>
+                <div class="article" id="img14">
+                    <img src="img14.jpg">
+                    <h2>上海科技馆</h2>
+                </div>
+            </div>
+            <div class="wall-column">
+                <div class="article" id="img21">
+                    <img src="img21.jpg">
+                    <h2>丹东.鸭绿江</h2>
+                </div>
+                <div class="article" id="img22">
+                    <img src="img22.jpg">
+                    <h2>华蓥.夫妻石</h2>
+                </div>
+                <div class="article" id="img23">
+                    <img src="img23.jpg">
+                    <h2>江南大学</h2>
+                </div>
+            </div>
+            <div class="wall-column">
+                <div class="article" id="img31">
+                    <img src="img31.jpg">
+                    <h2>盘锦.红海滩</h2>
+                </div>
+                <div class="article" id="img32">
+                    <img src="img32.jpg">
+                    <h2>石家庄.柳堤</h2>
+                </div>
+                <div class="article" id="img33">
+                    <img src="img33.jpg">
+                    <h2>上海.城隍庙</h2>
+                </div>
+            </div>
+            <div class="wall-column">
+                <div class="article" id="img41">
+                    <img src="img41.jpg">
+                    <h2>大连.旅顺</h2>
+                </div>
+                <div class="article" id="img42">
+                    <img src="img42.jpg">
+                    <h2>西安.钟楼</h2>
+                </div>
+                <div class="article" id="img43">
+                    <img src="img43.jpg">
+                    <h2>中华艺术宫</h2>
                 </div>
             </div>
         </div>
@@ -227,8 +328,6 @@
         </div>
     </section>
     <!-- ============================ END Content =========================== -->
-
-    <a class="bshareDiv" href="http://www.bshare.cn/share">������ť</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=5&amp;fs=4&amp;bgcolor=LightBlue"></script>
 
     <!-- ============================ Footer =========================== -->
 
