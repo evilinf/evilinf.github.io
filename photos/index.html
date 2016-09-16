@@ -270,89 +270,71 @@
     <!-- ============================ END Hero Image =========================== -->
     <!-- ============================ Content =========================== -->
     ﻿<!-- 画廊图片库 -->
-    <!--<main id="main" class="site-main" role="main">-->
-        <!--<div class="site-info">-->
-        <!--</div>-->
+    <style>
+        body{
+            background: #eee;
+        }
+        .gallery{
+            list-style: none;
+            margin: 50px auto; padding: 0;
+            width: 642px; /* (200+10+4)x3 */
+            font-size: 0; /* fix inline-block spacing */
+        }
+        .gallery li{
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            width: 200px; height: 150px;
+            margin: 2px;
+            border: 5px solid #fff;
+            -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+            -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+            box-shadow: 0 2px 2px rgba(0,0,0,.1);
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            -ms-transition: all .3s ease;
+            -o-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+        .gallery:hover li:not(:hover){
+            -webkit-filter: blur(2px) grayscale(1);
+            -moz-filter: blur(2px) grayscale(1);
+            -o-filter: blur(2px) grayscale(1);
+            /*-ms-filter: blur(2px) grayscale(1);*/
+            filter: blur(2px) grayscale(1);
+            opacity: .7; /* fallback */
+        }
+        /* Demo page only */
+        #about{
+            color: #999;
+            text-align: center;
+            font: 0.9em Arial, Helvetica;
+        }
+        #about a{
+            color: #777;
+        }
+    </style>
 
-        <!--<article class="htmleaf-container">-->
-            <div class="wall">
-                <div class="wall-column">
-                    <li>
-                        <div class="article" id="">
-                            <a href="http://odhn7mrx6.bkt.clouddn.com/img11.jpg" class="fancybox" rel="group">
-                                <img src="http://odhn7mrx6.bkt.clouddn.com/img11.jpg"></a>
-                            <h2>大连.星海</h2>
-                        </div>
-                    </li>
-                    <div class="article" id="img11">
-                        <img src="http://odhn7mrx6.bkt.clouddn.com/img11.jpg">
-                        <h2>大连.星海</h2>
-                    </div>
-                    <div class="article" id="img12">
-                        <img src="img12.jpg">
-                        <h2>旅顺.海星</h2>
-                    </div>
-                    <div class="article" id="img13">
-                        <img src="img13.jpg">
-                        <h2>四川.广安</h2>
-                    </div>
-                    <div class="article" id="img14">
-                        <img src="img14.jpg">
-                        <h2>上海科技馆</h2>
-                    </div>
-                </div>
-                <div class="wall-column">
-                    <div class="article" id="img21">
-                        <img src="img21.jpg">
-                        <h2>丹东.鸭绿江</h2>
-                    </div>
-                    <div class="article" id="img22">
-                        <img src="img22.jpg">
-                        <h2>华蓥.夫妻石</h2>
-                    </div>
-                    <div class="article" id="img23">
-                        <img src="img23.jpg">
-                        <h2>江南大学</h2>
-                    </div>
-                </div>
-                <div class="wall-column">
-                    <div class="article" id="img31">
-                        <img src="img31.jpg">
-                        <h2>盘锦.红海滩</h2>
-                    </div>
-                    <div class="article" id="img32">
-                        <img src="img32.jpg">
-                        <h2>石家庄.柳堤</h2>
-                    </div>
-                    <div class="article" id="img33">
-                        <img src="img33.jpg">
-                        <h2>上海.城隍庙</h2>
-                    </div>
-                </div>
-                <!--<div class="wall-column">-->
-                    <!--<div class="article" id="img41">-->
-                        <!--<img src="img41.jpg">-->
-                        <!--<h2>大连.旅顺</h2>-->
-                    <!--</div>-->
-                    <!--<div class="article" id="img42">-->
-                        <!--<img src="img42.jpg">-->
-                        <!--<h2>西安.钟楼</h2>-->
-                    <!--</div>-->
-                    <!--<div class="article" id="img43">-->
-                        <!--<img src="img43.jpg">-->
-                        <!--<h2>中华艺术宫</h2>-->
-                    <!--</div>-->
-                <!--</div>-->
-            </div>
-        <!--</article>-->
-        <!--<script>window.jQuery || document.write('<script src="jquery-2.1.1.min.js"><\/script>')</script>-->
-        <!--<script type="text/javascript" src="jaliswall.js"></script>-->
-        <!--<script type="text/javascript">-->
-            <!--$(function(){-->
-                <!--$('.wall').jaliswall({ item: '.article' });-->
-            <!--});-->
-        <!--</script>-->
-    <!--</main>-->
+    <ul class="gallery">
+
+        <li><div class="article" id="img11"> <img src="http://odhn7mrx6.bkt.clouddn.com/img11.jpg"><h2>大连.星海</h2></div></li>
+        <li><div class="article" id="img12"> <img src="http://odhn7mrx6.bkt.clouddn.com/img12.jpg"><h2>旅顺.海星</h2></div></li>
+        <li><div class="article" id="img13"> <img src="http://odhn7mrx6.bkt.clouddn.com/img13.jpg"><h2>四川.广安</h2></div></li>
+        <p></p>
+        <li><div class="article" id="img21"> <img src="http://odhn7mrx6.bkt.clouddn.com/img21.jpg"><h2>丹东.鸭绿江</h2></div></li>
+        <li><div class="article" id="img22"> <img src="http://odhn7mrx6.bkt.clouddn.com/img22.jpg"><h2>华蓥.夫妻石</h2></div></li>
+        <li><div class="article" id="img23"> <img src="http://odhn7mrx6.bkt.clouddn.com/img23.jpg"><h2>江南大学</h2></div></li>
+        <p></p>
+        <li><div class="article" id="img31"> <img src="http://odhn7mrx6.bkt.clouddn.com/img31.jpg"><h2>盘锦.红海滩</h2></div></li>
+        <li><div class="article" id="img32"> <img src="http://odhn7mrx6.bkt.clouddn.com/img32.jpg"><h2>石家庄.柳堤</h2></div></li>
+        <li><div class="article" id="img33"> <img src="http://odhn7mrx6.bkt.clouddn.com/img33.jpg"><h2>上海.城隍庙</h2></div></li>
+        <p></p>
+        <li><div class="article" id="img41"> <img src="http://odhn7mrx6.bkt.clouddn.com/img41.jpg"><h2>大连.旅顺</h2></div></li>
+        <li><div class="article" id="img42"> <img src="http://odhn7mrx6.bkt.clouddn.com/img42.jpg"><h2>西安.钟楼</h2></div></li>
+        <li><div class="article" id="img43"> <img src="http://odhn7mrx6.bkt.clouddn.com/img43.jpg"><h2>中华艺术宫</h2></div></li>
+    </ul>
+
+
 <!--照片库-->
 
     <section id="statement">
