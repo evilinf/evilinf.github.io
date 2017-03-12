@@ -49,7 +49,7 @@
   <title>JSP - Evilinf</title>
 
 
-  <link rel="shortcut icon" href="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1213244145,1929675167&fm=21&gp=0.jpg">
+  <link rel="shortcut icon" href="http://img5.imgtn.bdimg.com/it/u=3004079082,2058114807&fm=23&gp=0.jpg">
     <!--font-awesome-->
   <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Custom CSS/Sass -->
@@ -67,7 +67,7 @@
     <div class="logo">
       <a href="/" rel="home">
         
-        <img src="http://img4.imgtn.bdimg.com/it/u=2431176967,2829764281&fm=23&gp=0.jpg" alt="Evilinf" height="60">
+        <img src="http://img4.imgtn.bdimg.com/it/u=1433040997,3737317795&fm=23&gp=0.jpg" alt="Evilinf" height="60">
         
       </a>
     </div>
@@ -192,27 +192,30 @@
 <div class="footer-widgets">
       <div class="header-content">
         <div class="header-info-link">
-          <% if (config.social) { %>
-            <% _.forIn(config.social, function(val, key){ %>
-              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
-            <% }) %>
-          <% } else { %>
-            <% _.forIn(theme.social, function(val, key){ %>
-              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
-            <% }) %>
-          <% } %>
+          
+            
+              <a href="https://github.com/evilinf" class="icon icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            
+              <a href="https://www.zhihu.com/people/hui-liu-lei-de-yu-54" class="icon icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            
+              <a href="https://www.facebook.com/profile.php?id=100012241389629" class="icon icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            
+          
         </div>
     </div>
 </div>
 <!-- Footer -->
 <footer class="site-info">
   <p>
-    <span><%- config.title %> &copy; <%= (new Date()).getFullYear() %></span>
-    <% if(config.footer !== null) { %>
+    <span>Evilinf &copy; 2017</span>
+    
       <span class="split">|</span>
-      <span><%- config.footer || theme.footer %></span>
-    <% } %>
+      <span>The Sea of Evilinf</span>
+    
   </p>
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </footer>
 
 
