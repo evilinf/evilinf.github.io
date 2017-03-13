@@ -158,7 +158,7 @@
 
   <!-- Main Content -->
   <div class="site-content home">
-      <div class="content-header" style="background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489388384174&di=f30628794fccba92ace3d246a18a4f64&imgtype=0&src=http%3A%2F%2Fimg5.niutuku.com%2Fphone%2F1301%2F1253%2F1253-niutuku.com-483381.jpg) no-repeat bottom;">
+      <div class="content-header" style="background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1489389143233&di=6c7b8f905e64cedac961f038086edc40&imgtype=0&src=http%3A%2F%2Fimg2.niutuku.com%2Fdesk%2F1208%2F1523%2Fntk-1523-18275.jpg) no-repeat bottom;">
         <div class="headline">
             <a href="#" class="demo">
                 <div class="img" style="background-image:url(http://img1.imgtn.bdimg.com/it/u=583385035,950503182&fm=23&gp=0.jpg)"></div>
@@ -224,30 +224,27 @@
 <div class="footer-widgets">
       <div class="header-content">
         <div class="header-info-link">
-          
-            
-              <a href="https://github.com/evilinf" class="icon icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            
-              <a href="https://www.zhihu.com/people/hui-liu-lei-de-yu-54" class="icon icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            
-              <a href="https://www.facebook.com/profile.php?id=100012241389629" class="icon icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            
-          
+          <% if (config.social) { %>
+            <% _.forIn(config.social, function(val, key){ %>
+              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+            <% }) %>
+          <% } else { %>
+            <% _.forIn(theme.social, function(val, key){ %>
+              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+            <% }) %>
+          <% } %>
         </div>
     </div>
 </div>
 <!-- Footer -->
 <footer class="site-info">
   <p>
-    <span>Evilinf &copy; 2017</span>
-    
+    <span><%- config.title %> &copy; <%= (new Date()).getFullYear() %></span>
+    <% if(config.footer !== null) { %>
       <span class="split">|</span>
-      <span>The Sea of Evilinf</span>
-    
+      <span><%- config.footer || theme.footer %></span>
+    <% } %>
   </p>
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </footer>
 
 
