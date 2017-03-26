@@ -167,14 +167,7 @@
         <!-- Post Main Content -->
         <div class="entry-content">
           <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490369422560&di=4047d6bc7ebf76a12c738a2fdccdd456&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fpic%2Fitem%2F37d12f2eb9389b50708290eb8535e5dde7116e0d.jpg" width="600" height="347"><br>   这个杀手不太冷，真的不太冷，是很呆萌，是很傻傻可爱。每天机械的重复之前的每一天，可突然一个人闯入你的生活，打乱你的一切。开始也许你还觉得不太习惯，因为自己的一切都不太一样，总是多了一个人，一丝思虑，一份牵挂。两个之前都是一个人，没有人关心，没有人疼爱，没有人呵护。表面上都很傲娇，都很独立，只有走入他们的心里才会知道他们是多么地渴望被人关心和疼爱。他们彼此带给对方安慰和温暖。最后他们都爱对方胜过了自己，为了对方，不管是自己的生命还是什么。这部影片带给我的感动是无尽的。让我想起了我的外婆和我大哥，还有那么多的好朋友，自己真的好幸福。和他们一起的日子是那么的幸福，其实也没必要太过执着于别人眼中的幸福生活，因为现在的我就挺幸福的。有人陪你一起傻，一起疯，一起玩。会担心你的终身大事，又会将他的人生经验告诉你，叫你别跟他一样，在他眼中的你是那么的优秀……他的一句“他妈别人捷足先登了”让我好笑又感觉好暖。给你一种心安，会时时刻刻提醒你你是他朋友，他一直记得你。对于我这个从小就没什么安全感，坚强只是伪装的我来说这种心安太重要了。感谢老天让我如此幸福！<br>   杀手在我心中是那么暖心，而警察在我心中又是那般的可怕。我不知道现实生活中是不是这样。功利使人魔鬼化。我不想在逃避，我想尽一些努力让世界少些残忍，也许这话如此的可笑。自己一个社会最底层有啥资本说这样的话。但是就是想说这样的话，想做这样的事。给自己找理由不去争取，一味地假手于人，祈求别人完成自己的心愿，未免对别人太过于残忍……努力吧！现在的我也许有一万种失败的可能，但是那也只是可能，如果不努力，真的只能一味地抱怨社会。那样我会看不起自己的。</p>
-<p>####### 离别时只道是当时习惯</p>
-<p>####### 一切都很平淡不觉出彩</p>
-<p>####### 雨落时才想起那种心安</p>
-<p>####### 欢声和笑语还在我耳畔</p>
-<p>####### 如今已各自在城市两端</p>
-<p>####### 相距远相见难不聚只散</p>
-<p>####### 其实我并没有太多期盼</p>
-<p>####### 毕竟一生很短少有圆满</p>
+<p>离别时只道是当时习惯<br>一切都很平淡不觉出彩<br>雨落时才想起那种心安<br>欢声和笑语还在我耳畔<br>如今已各自在城市两端<br>相距远相见难不聚只散<br>其实我并没有太多期盼<br>毕竟一生很短少有圆满</p>
 
         </div>
       </article>
@@ -232,30 +225,27 @@ var duoshuoQuery = {short_name:"evilinf"};
 <div class="footer-widgets">
       <div class="header-content">
         <div class="header-info-link">
-          
-            
-              <a href="https://github.com/evilinf" class="icon icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            
-              <a href="https://www.zhihu.com/people/hui-liu-lei-de-yu-54" class="icon icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            
-              <a href="https://www.facebook.com/profile.php?id=100012241389629" class="icon icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            
-          
+          <% if (config.social) { %>
+            <% _.forIn(config.social, function(val, key){ %>
+              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+            <% }) %>
+          <% } else { %>
+            <% _.forIn(theme.social, function(val, key){ %>
+              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+            <% }) %>
+          <% } %>
         </div>
     </div>
 </div>
 <!-- Footer -->
 <footer class="site-info">
   <p>
-    <span>Evilinf &copy; 2017</span>
-    
+    <span><%- config.title %> &copy; <%= (new Date()).getFullYear() %></span>
+    <% if(config.footer !== null) { %>
       <span class="split">|</span>
-      <span>The Sea of Evilinf</span>
-    
+      <span><%- config.footer || theme.footer %></span>
+    <% } %>
   </p>
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </footer>
 
 
