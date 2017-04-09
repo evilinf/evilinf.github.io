@@ -18,7 +18,7 @@
 
   <!--Open Graph Title-->
   
-      <meta property="og:title" content="Evilinf"/>
+      <meta property="og:title" content="中缀表达式转后缀表达式"/>
   
   <!--Open Graph Description-->
   
@@ -28,7 +28,7 @@
   <meta property="og:site_name" content="Evilinf"/>
   <!--Type page-->
   
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content="article" />
   
   <!--Page Cover-->
   
@@ -46,7 +46,7 @@
     </script>
   <!-- Title -->
   
-  <title>归档：2017/3 - Evilinf</title>
+  <title>中缀表达式转后缀表达式 - Evilinf</title>
 
 
   <link rel="shortcut icon" href="http://odhn7mrx6.bkt.clouddn.com/logo.jpg">
@@ -148,116 +148,71 @@
 
 
   <!-- Main Content -->
-  
-
-<!-- Main Content -->
-<div class="archive content-area">
-  <div class="container">
-    <h1 class="entry-title">2017/3</h1>
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <!-- Use lodash to classify posts. See https://lodash.com/docs#groupBy
-          1. group site.posts by year
-          2. sort posts-in-one-year by Month and Day
-        -->
-        
-
-        
-          <h2 class="year">2017</h2>
-          <ul class="list">
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            中缀表达式转后缀表达式
             
-  <li>
-    <span class="date">
-      2017-04-09
-    </span>
-    <a href="/2017/04/09/convert/" class="title">
-      中缀表达式转后缀表达式
-    </a>
-  </li>
+          </h1>
+         
+        </div>
+         <p class="a-posted-on">
+          2017-04-09
+          </p>
+        <!-- Post Main Content -->
+        <div class="entry-content">
+          <h2 id="自我感想"><a href="#自我感想" class="headerlink" title="自我感想"></a>自我感想</h2><p>这是一个很典型的利用栈的例子。中缀表达式就是我们平时习惯的表达式，例如：A+B<em>(C-D)-E/F;而后缀表达式是计算机比较熟悉的方式，便于计算。对应前面例子的后缀表达式为：ABCD-</em>+EF/-</p>
+<h2 id="中缀表达式转后缀表达式的原理"><a href="#中缀表达式转后缀表达式的原理" class="headerlink" title="中缀表达式转后缀表达式的原理"></a>中缀表达式转后缀表达式的原理</h2><p>转自 <a href="http://www.cnblogs.com/chenjiafeng/p/5328578.html" target="_blank" rel="external">http://www.cnblogs.com/chenjiafeng/p/5328578.html</a><br>1、遇到操作数：直接输出（添加到后缀表达式中）<br>2、栈为空时，遇到运算符，直接入栈<br>3、遇到左括号：将其入栈<br>4、遇到右括号：执行出栈操作，并将出栈的元素输出，直到弹出栈的是左括号，左括号不输出<br>5、遇到其他运算符：加减乘除：弹出所有优先级大于或者等于该运算符的栈顶元素，然后将该运算符入栈<br>6、最终将栈中的元素依次出栈，输出</p>
+<p>先占个位置，之后想用Java实现一个简单的计算器，主要就是对栈的使用</p>
 
-  <li>
-    <span class="date">
-      2017-04-04
-    </span>
-    <a href="/2017/04/04/seo/" class="title">
-      SEO
-    </a>
-  </li>
-
-  <li>
-    <span class="date">
-      2017-03-26
-    </span>
-    <a href="/2017/03/26/evil/" class="title">
-      《路西法效应-好人是如何变成恶魔的》
-    </a>
-  </li>
-
-  <li>
-    <span class="date">
-      2017-03-24
-    </span>
-    <a href="/2017/03/24/killer/" class="title">
-      这个杀手不太冷
-    </a>
-  </li>
-
-  <li>
-    <span class="date">
-      2017-03-21
-    </span>
-    <a href="/2017/03/21/binary/" class="title">
-      《有趣的二进制》软件安全与逆向分析
-    </a>
-  </li>
-
-  <li>
-    <span class="date">
-      2017-03-20
-    </span>
-    <a href="/2017/03/20/palace/" class="title">
-      古代皇宫
-    </a>
-  </li>
-
-  <li>
-    <span class="date">
-      2017-03-20
-    </span>
-    <a href="/2017/03/20/sap/" class="title">
-      SAP简介
-    </a>
-  </li>
-
-  <li>
-    <span class="date">
-      2017-03-16
-    </span>
-    <a href="/2017/03/16/math/" class="title">
-      数学之美
-    </a>
-  </li>
-
-
-          </ul>
-        
-          <h2 class="year">2016</h2>
-          <ul class="list">
-            
-  <li>
-    <span class="date">
-      2016-09-14
-    </span>
-    <a href="/2016/09/14/My-Mood/" class="title">
-      孤独
-    </a>
-  </li>
-
-
-          </ul>
-        
-      </div>
+        </div>
+      </article>
     </div>
+    <!-- Pre or Next -->
+    
+	<div class="container" >
+           <ul class="pager">
+    	     
+           
+              <li class="next">
+              <a href="/2017/04/04/seo/" rel="prev">上一篇</a>
+            </li>
+           
+          </ul>
+       </div>
+　　　　<!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">留言</h1> -->
+
+  
+    <!-- 多说评论框 start -->
+        <script type="text/javascript">
+var duoshuoQuery = {short_name:"evilinf"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+    <div class="ds-thread" data-thread-key="post-convert" data-title="中缀表达式转后缀表达式" data-url="http://yoursite.com/2017/04/09/convert/"></div>
+    <!-- 多说评论框 end -->
+  
+</section>
+
+
+    </div>
+   
+　　　　
   </div>
 </div>
 
