@@ -171,6 +171,13 @@
 <h2 id="静态分析（总览全局）"><a href="#静态分析（总览全局）" class="headerlink" title="静态分析（总览全局）"></a>静态分析（总览全局）</h2><p> 阅读反汇编代码（将可执行程序用二进制编辑器WinHex打开或用反汇编工具 <a href="https://hex-rays.com/products/ida/support/download.shtml" target="_blank" rel="external">https://hex-rays.com/products/ida/support/download.shtml</a> ）<br> 提取可执行文件中的字符串，分析使用了哪些单词</p>
 <h2 id="动态分析（细看局部）"><a href="#动态分析（细看局部）" class="headerlink" title="动态分析（细看局部）"></a>动态分析（细看局部）</h2><p>  获取文件和注册表访问日志（Process Monitor）<br>  抓取网络包</p>
 <h2 id="调试器（http-ollydbg-de-）的一般功能："><a href="#调试器（http-ollydbg-de-）的一般功能：" class="headerlink" title="调试器（http://ollydbg.de/）的一般功能："></a>调试器（<a href="http://ollydbg.de/）的一般功能：" target="_blank" rel="external">http://ollydbg.de/）的一般功能：</a></h2><p>  断点<br>  单步跳入、跳出（调用函数时是否进入函数内部）<br>  查看寄存器和内存数据</p>
+<h2 id="分析Java编写的应用程序"><a href="#分析Java编写的应用程序" class="headerlink" title="分析Java编写的应用程序"></a>分析Java编写的应用程序</h2><p>  在编译时，源代码会被编译成字节码（一种抽象的中间语言）<br>  为各种环境分别安装能够解释执行字节码的虚拟机</p>
+<p>  Java反编译器（将字节码还原成源代码）  <a href="http://java.decompiler.free.fr/" target="_blank" rel="external">http://java.decompiler.free.fr/</a> (eclipse)</p>
+<h2 id="如何防止软件被别人分析"><a href="#如何防止软件被别人分析" class="headerlink" title="如何防止软件被别人分析"></a>如何防止软件被别人分析</h2><p>  反调试技术 IsDebuggerPresent 一种检测是否挂载了调试器的ＡＰＩ函数　　ｉｎｒ２ｄｈ<br>  通过代码混淆来防止分析<br>  将可执行文件进行压缩　打包器　<a href="http://upx.sourceforge.net/（支持ＥＬＦ、ＤＬＬ、ＣＯＦＦ等）" target="_blank" rel="external">http://upx.sourceforge.net/（支持ＥＬＦ、ＤＬＬ、ＣＯＦＦ等）</a>　通过ｕｎｐａｃｋｅｒ、手动解包ＵＰＸ、硬件断点对ＡＳＰａｃｋ进行解包<br>  （软件断点：调试器将断点位置的指令改写成了０ｘＣＣ（ｉｎｔ３ｈ）。处理器遇到０ｘＣＣ指令，会通过操作系统将异常报告给调试器。硬件断点是通过直接写入寄存器（ＤＲ寄存器）来实现的，硬件断点只能设置４个）</p>
+<h2 id="利用软件的漏洞进行攻击"><a href="#利用软件的漏洞进行攻击" class="headerlink" title="利用软件的漏洞进行攻击"></a>利用软件的漏洞进行攻击</h2><p>　（虚拟环境：　<a href="http://www.vmware.com/products/players.html" target="_blank" rel="external">http://www.vmware.com/products/players.html</a>　<a href="http://07c00.com/tmp/FreeBSD_8.3_binbook.zip（用户名：ｒｏｏｔ／ｇｕｅｓｔ、密码ｒｏｏｔ／ｇｕｅｓｔ；）" target="_blank" rel="external">http://07c00.com/tmp/FreeBSD_8.3_binbook.zip（用户名：ｒｏｏｔ／ｇｕｅｓｔ、密码ｒｏｏｔ／ｇｕｅｓｔ；）</a>　<a href="http://07c00.com/tmp/Ubuntu-12.04_binbook.zip（用户名密码同上））" target="_blank" rel="external">http://07c00.com/tmp/Ubuntu-12.04_binbook.zip（用户名密码同上））</a><br>　利用缓冲区溢出来执行任意代码；<br>　绕开安全机制的技术：１.使用ｌｉｂｃ中的函数来进行攻击：ｒｅｔｕｒｎ－ｉｎｔｏ－ｌｉｂｃ；利用未随机化的模块内部的汇编代码进行攻击：ＲＯＰ（面向返回编程）</p>
+<h2 id="防御攻击的技术"><a href="#防御攻击的技术" class="headerlink" title="防御攻击的技术"></a>防御攻击的技术</h2><p>　地址随机化：ＡＳＬＲ<br>　除存放可执行代码的内存空间以外，对其余内存空间尽量禁用执行权限：Ｅｘｅｃ－ｓｈｉｅｌｄ<br>　在编译时插入检测栈数据完整性的代码：ＳｔａｃｋＧｕａｒｄ</p>
+<h2 id="用Metasploit-Framework验证和调查漏洞"><a href="#用Metasploit-Framework验证和调查漏洞" class="headerlink" title="用Ｍｅｔａｓｐｌｏｉｔ　Ｆｒａｍｅｗｏｒｋ验证和调查漏洞"></a>用Ｍｅｔａｓｐｌｏｉｔ　Ｆｒａｍｅｗｏｒｋ验证和调查漏洞</h2><p>　<a href="https://www.rapid7.com/products/metasploit/" target="_blank" rel="external">https://www.rapid7.com/products/metasploit/</a><br>　各种安全漏洞的信息都在一个叫作ＣＶＥ的数据库中进行统一管理　<a href="http://cve.mitre.org/find/index.html" target="_blank" rel="external">http://cve.mitre.org/find/index.html</a></p>
+<h2 id="用Zero-Wine-Tryouts分析恶意软件"><a href="#用Zero-Wine-Tryouts分析恶意软件" class="headerlink" title="用Ｚｅｒｏ　Ｗｉｎｅ　Ｔｒｙｏｕｔｓ分析恶意软件"></a>用Ｚｅｒｏ　Ｗｉｎｅ　Ｔｒｙｏｕｔｓ分析恶意软件</h2><p>　<a href="http://zerowine-tryout.sourceforge.net/" target="_blank" rel="external">http://zerowine-tryout.sourceforge.net/</a></p>
 
         </div>
       </article>
@@ -228,30 +235,27 @@ var duoshuoQuery = {short_name:"evilinf"};
 <div class="footer-widgets">
       <div class="header-content">
         <div class="header-info-link">
-          
-            
-              <a href="https://github.com/evilinf" class="icon icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            
-              <a href="https://www.zhihu.com/people/hui-liu-lei-de-yu-54" class="icon icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            
-              <a href="https://www.facebook.com/profile.php?id=100012241389629" class="icon icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            
-          
+          <% if (config.social) { %>
+            <% _.forIn(config.social, function(val, key){ %>
+              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+            <% }) %>
+          <% } else { %>
+            <% _.forIn(theme.social, function(val, key){ %>
+              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+            <% }) %>
+          <% } %>
         </div>
     </div>
 </div>
 <!-- Footer -->
 <footer class="site-info">
   <p>
-    <span>Evilinf &copy; 2017</span>
-    
+    <span><%- config.title %> &copy; <%= (new Date()).getFullYear() %></span>
+    <% if(config.footer !== null) { %>
       <span class="split">|</span>
-      <span>The Sea of Evilinf</span>
-    
+      <span><%- config.footer || theme.footer %></span>
+    <% } %>
   </p>
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </footer>
 
 
