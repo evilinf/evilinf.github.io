@@ -554,6 +554,41 @@
                    </a>
                 </li>
             
+                <li class="photo photo_shows">
+                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/dlxy.jpg" target="_blank">
+                      <div class="mask transition3">大连.夕阳</div>
+                      <img src="http://odhn7mrx6.bkt.clouddn.com/dlxy.jpg">
+                   </a>
+                </li>
+            
+                <li class="photo photo_shows">
+                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/friend2.JPG" target="_blank">
+                      <div class="mask transition3">朋友.海边</div>
+                      <img src="http://odhn7mrx6.bkt.clouddn.com/friend2.JPG">
+                   </a>
+                </li>
+            
+                <li class="photo photo_shows">
+                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/friends.jpg" target="_blank">
+                      <div class="mask transition3">朋友.交大</div>
+                      <img src="http://odhn7mrx6.bkt.clouddn.com/friends.jpg">
+                   </a>
+                </li>
+            
+                <li class="photo photo_shows">
+                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/hbjm.jpg" target="_blank">
+                      <div class="mask transition3">河北经贸大学</div>
+                      <img src="http://odhn7mrx6.bkt.clouddn.com/hbjm.jpg">
+                   </a>
+                </li>
+            
+                <li class="photo photo_shows">
+                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/rain.jpg" target="_blank">
+                      <div class="mask transition3">海边.雨天</div>
+                      <img src="http://odhn7mrx6.bkt.clouddn.com/rain.jpg">
+                   </a>
+                </li>
+            
         </ul>
         </ul></div></div>
 </div>
@@ -569,27 +604,30 @@
 <div class="footer-widgets">
       <div class="header-content">
         <div class="header-info-link">
-          <% if (config.social) { %>
-            <% _.forIn(config.social, function(val, key){ %>
-              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
-            <% }) %>
-          <% } else { %>
-            <% _.forIn(theme.social, function(val, key){ %>
-              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
-            <% }) %>
-          <% } %>
+          
+            
+              <a href="https://github.com/evilinf" class="icon icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            
+              <a href="https://www.zhihu.com/people/hui-liu-lei-de-yu-54" class="icon icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            
+              <a href="https://www.facebook.com/profile.php?id=100012241389629" class="icon icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            
+          
         </div>
     </div>
 </div>
 <!-- Footer -->
 <footer class="site-info">
   <p>
-    <span><%- config.title %> &copy; <%= (new Date()).getFullYear() %></span>
-    <% if(config.footer !== null) { %>
+    <span>Evilinf &copy; 2017</span>
+    
       <span class="split">|</span>
-      <span><%- config.footer || theme.footer %></span>
-    <% } %>
+      <span>The Sea of Evilinf</span>
+    
   </p>
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </footer>
 
 
