@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+  <meta name="description" content="装B 显摆 寻求知己">
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="会流泪的鱼">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="IBM大型机系统管理"/>
+  
+  <!--Open Graph Description-->
+  
+      <meta property="og:description" content="装B 显摆 寻求知己" />
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="Evilinf"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- 百度统计 -->
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+  	var hm = document.createElement("script");
+  	hm.src = "https://hm.baidu.com/hm.js?c0451e16533956173997b85f7a8de666";
+  	var s = document.getElementsByTagName("script")[0]; 
+  	s.parentNode.insertBefore(hm, s);
+	})();
+    </script>
+  <!-- Title -->
+  
+  <title>IBM大型机系统管理 - Evilinf</title>
+
+
+  <link rel="shortcut icon" href="http://odhn7mrx6.bkt.clouddn.com/logo.jpg">
+    <!--font-awesome-->
+  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="http://odhn7mrx6.bkt.clouddn.com/logo2.jpg" alt="Evilinf" height="60">
+        
+      </a>
+    </div>
+    <a class="header-name" href="/">
+            <span>Evilinf</span>
+            的部落宅
+        </a>
+    <!-- navbar -->
+    <nav class="navbar">
+      <!--  nav links -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  <i class="fa fa-home "></i>
+                
+                首页
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  <i class="fa fa-archive "></i>
+                
+                归档
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  <i class="fa fa-user "></i>
+                
+                关于
+              </a>
+            </li>
+          
+            <li>
+              <a href="/project">
+                
+                  <i class="fa fa-folder-open "></i>
+                
+                项目
+              </a>
+            </li>
+          
+            <li>
+              <a href="/photo">
+                
+                  <i class="fa fa-photo "></i>
+                
+                相册
+              </a>
+            </li>
+          
+            <li>
+              <a href="/guestbook">
+                
+                  <i class="fa fa-edit "></i>
+                
+                留言
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            IBM大型机系统管理
+            
+          </h1>
+         
+        </div>
+         <p class="a-posted-on">
+          2017-07-12
+          </p>
+        <!-- Post Main Content -->
+        <div class="entry-content">
+          <hr>
+<h3 id="SDSF、ISPF中使用的命令"><a href="#SDSF、ISPF中使用的命令" class="headerlink" title="SDSF、ISPF中使用的命令"></a>SDSF、ISPF中使用的命令</h3><p>L MENBER                 定位MENBER<br>FIND COND                 在MSG中找COND   F5查找下一个COND<br>S MEMBER1 ; COPY MENBER2             拷贝MENBER2生成MENBER1<br>C NAME1 NAME2 ALL     将字符NAME1全部换成NAME2<br>MAXCC最大返回码</p>
+<hr>
+<h3 id="主机系统相关概念"><a href="#主机系统相关概念" class="headerlink" title="主机系统相关概念"></a>主机系统相关概念</h3><p>DD实现语句覆盖，作业步EXEC，执行顺序自顶向下<br>主机中不存在路径的概念，名字唯一（存在段、编目和索引）<br>主编目上包括3个必须的：system data sets（系统数据集的入口）,alias（别名）,user catalog pointer<br>BOOTSTRAP 清除缓存，配置文件，恢复的指定，可IPL（初始化程序加载）<br>主机系统启动过程：1）硬件上电，灯泡闪烁。2）将系统启动所需要的子程序子任务参数进行配置，3）配置完成之后启动相关子程序参数<br>主机上地址空间的三种类型：STC TSU（active） JOB<br>HLQ高级限定词（alias）     USERID<br>卷上的目录结构分两种：BCS基本目录结构，VVDS（VSAM目录结构） SMS存储管理子系统<br>主机系统中job执行的6个步骤：INPUT CONVERSION EXECUTION OUTPUT HARDCOPY PURGE（spool space、job ）<br>resource：（1）profile离散、通用（2）通用资源TSOPROC等四个类</p>
+<h3 id="查找顺序"><a href="#查找顺序" class="headerlink" title="查找顺序"></a>查找顺序</h3><p>编目数据集的查找顺序：<br>      主编目-》别名-》用户编目-》VTOC（volume table of contents）-》数据集<br>      主编目-》别名-》系统数据集<br>没编目数据集的查找顺序：<br>      volume（卷名）-》VTOC（卷目录列表）-》数据集</p>
+<hr>
+<h3 id="IBM主机虚拟机Hercules启动步骤"><a href="#IBM主机虚拟机Hercules启动步骤" class="headerlink" title="IBM主机虚拟机Hercules启动步骤"></a>IBM主机虚拟机Hercules启动步骤</h3><p>（1）启动虚拟机Hercules<br>（2）打开pcomm    端口23<br>（3）command / power on                       Hercules      加载卷    上电<br>（4）启动IPL command /  IPL/Load                Hercules  数据交换  闪  pcomm发生变化<br>（5）查看活跃任务  D A,L                         pcomm<br>（6）回复高量信息  例如：02，term               pcomm<br>（7）S TSO(启动）                                 pcomm<br>（8）file/运行同一个                               pcomm<br>（9） L TSO (登录)<br>(10) 账户:IBMUSER 密码DJTUIBM        根据实际情况而定</p>
+<h3 id="IBM主机虚拟机Hercules关闭步骤"><a href="#IBM主机虚拟机Hercules关闭步骤" class="headerlink" title="IBM主机虚拟机Hercules关闭步骤"></a>IBM主机虚拟机Hercules关闭步骤</h3><p>(1) LOGOFF               在当前的TSO命令提示符界面 pcomm<br>(2) S SHUTDOWN      正常下电            console页面 (PCOMM)<br>(3) -DB9G STOP DB2             下掉DB9G组件    console页面 (PCOMM)<br>(4) C CSQ6MSTER             下掉CSQ6MSTER组件    console页面 (PCOMM)<br>(5) $P JES2                  下掉JES2组件    console页面 (PCOMM)<br>(6) Z EOD            关闭系统启动    console页面 (PCOMM)<br>(7) EXIT           关闭虚拟机，保存之前的操作   Hercules虚拟机</p>
+<hr>
+<h3 id="IPL相关信息（在ISPF页面依次输入命令：M-5-SDSF-LOG-D-IPLINFO-D-PARMLIB-D-PUBLIC）"><a href="#IPL相关信息（在ISPF页面依次输入命令：M-5-SDSF-LOG-D-IPLINFO-D-PARMLIB-D-PUBLIC）" class="headerlink" title="IPL相关信息（在ISPF页面依次输入命令：M  5(SDSF)  LOG   /D IPLINFO   /D PARMLIB /D PUBLIC）"></a>IPL相关信息（在ISPF页面依次输入命令：M  5(SDSF)  LOG   /D IPLINFO   /D PARMLIB /D PUBLIC）</h3><p>ORDER:MVS JES2<br>执行“/D IPLINFO”的结果<br> IEE254I  09.17.59 IPLINFO DISPLAY 990<br> SYSTEM IPLED AT 08.34.40 ON 04/27/2017<br> RELEASE z/OS 01.09.00    LICENSE = z/OS<br> USED LOAD9C IN SYS1.IPLPARM ON 0A82         (load RELATIVE INFO )<br> ARCHLVL = 2   MTLSHARE = N<br> IEASYM LIST = 00<br> IEASYS LIST = 9C (OP)                (LOAD)<br> IODF DEVICE 0A82                        (IODF)<br> IPL DEVICE 0A80 VOLUME Z9RES1        (SYSRES)</p>
+<p>从上面的信息可知：<br> IPL系统驻留卷：0A80 sysres    类似于C盘的Windows文件夹：与系统相关的恢复日志等相关的配置<br> IODF： 0A82 29sys1<br> LOAD ：99<br>系统查找LOAD参数的查找顺序<br> 系统首先在IODF盘卷上查找SYSn.IPLPARM(n:0~9)<br> 然后系统在IODF盘卷上搜索SYS1.PARMLIB<br> 最后系统在SYSRES卷上搜索SYS1.PARMLIB</p>
+<hr>
+<p><strong><em>*</em></strong>将一个卷格式化重命名<strong><strong><strong><em>*</em></strong></strong></strong><br>VTOC   在SDSF上输入/D U,,,A80   查看以A80开始的卷的位置<br>（1）将要格式化的卷进行下线，两种方法 最开始的地方R 00，A97 将A97下线或者V A97，OFFLINE<br>（2）执行以下代码，将物理名为0A97上的卷的卷名USER02改为USER03<br>//IBMUSERA JOB 2017，’Z,W,Q’,CLASS=A,MSGCLASS=A,MSGLEVEL=(1，1),<br>//         NOTIFY=&amp;SYSUID<br>//INITDASD EXEC PGM=ICKDSF,COND=(4000，LT)<br>//SYSPRINT DD   SYSOUT=<em><br>//SYSIN    DD </em><br>   INIT UNITADDRESS(0A97) VERIFY(USER02) PURGE -<br>         INDEX(99，0，15) VTOC(100，0，15) NOVALIDATE -<br>         VOLID(USER03) OWNER(IBMUSER)<br>/*<br>（3）提交上面的JCL，在console界面上根据提示回复02，U<br>（4）再将0A97上线，“V A97，ONLINE”<br>（5）最后在SDSF上查看该卷USER03   /D U,,,A80</p>
+<hr>
+<p><strong><strong><strong><strong><em>**</em></strong></strong></strong></strong>系统安装（SMP/E）<strong><strong><strong>**</strong></strong></strong><br>命令：先“Receive”SMP/E数据集（这过程中也可以“Reject”），再将该数据集“Apply”到Targeted Libraries（也可以从Distribution Libraries“Restore”到Targeted Libraries），或“Accept”到Distribution Libraries。</p>
+<hr>
+<p> 拷贝分区数据集STU100.cics.jcl的命令<br>(1) 在要拷贝的数据集前Ctrl“CO”，再用“S”选中对应的成员，Ctrl，Ctrl入“ CICS.JCL”，也可以根据自己要求进行修改数据集参数<br>(2) 在ISPF主界面Ctrl“3.3”   C     ‘STU100.CICS.JCL(*)’     CICS.JCL</p>
+<hr>
+<p>打印卷SARES1上SYS1.VVDS.VSARES1的前10个VVDS（需修改的参数是DSN和VOL，指定对应的卷上对应的数据集）<br>查看系统含有VVDS的数据集，在3.4中输入IBMUSER.<em>.VVDS或者</em>.VVDS<br>一个卷只有一个VVDS数据集，且命名为SYS1.VVDS.V开始<br>//IBMUSERA JOB 1,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//         NOTIFY=&amp;SYSUID,CLASS=A<br>//STEP1    EXEC PGM=IDCAMS<br>//SYSPRINT DD SYSOUT=A<br>//VVDS     DD DSN=SYS1.VVDS.VSARES1,DISP=SHR,<br>//         UNIT=3390,VOL=SER=SARES1,AMP=AMORG<br>//SYSIN    DD <em><br>     PRINT INFILE(VVDS) -<br>     CHARACTER COUNT(10)<br>/</em><br>//<br>以&amp;开始的数据名为临时数据集，只在本过程使用，之后释放    &amp;SYSUID变量<br>IDCAMS（IntegrateD Catalog Access Method Services）功能：<br>1.定义主编目和用户编目；<br>2.定义VSAM数据集<br>3.定义VSAM数据集记录<br>4.定义VSAM数据集执行备份操作<br>5.显示编目中的记录<br>6.删除数据集</p>
+<hr>
+<p>打印卷USER02上的VTOC信息<br>//IBMUSERA  JOB 1,’L,T’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//      NOTIFY=&amp;SYSUID,CLASS=A<br>//STEP1     EXEC PGM=IEHLIST<br>//SYSPRINT   DD  SYSOUT=<em><br>//DD1        DD  UNIT=3390,VOL=SER=USER02,DISP=SHR<br>//SYSIN      DD  </em><br>    LISTVTOC VOL=3390=USER02<br>/*<br>//<br>IEHLIST程序用于系统信息列表，其中包括分区数据集目录列表、 VTOC 列表以及编目列表等。</p>
+<hr>
+<p>查看系统所有alias信息  或 可以在ISPF面板上6 LISTCAT ALIAS ALL<br>//IBMUSERB JOB 1,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//STEP1    EXEC PGM=IDCAMS<br>//SYSPRINT DD SYSOUT=<em><br>//SYSIN    DD </em><br>    LISTCAT ALIAS ALL<br>/*<br>//<br>查看系统所有USERCATALOG信息 或 可以在ISPF面板上6 LISTCAT USERCATALOG ALL</p>
+<hr>
+<h3 id="查看清空SPOOL池"><a href="#查看清空SPOOL池" class="headerlink" title="查看清空SPOOL池"></a>查看清空SPOOL池</h3><p>SDSF /$D SPOOL   LOG   清除spool （1）$PJ1-999999  （2）$PO JOBQ,DAY&gt;0（常用，把相关日志一并清除）<br>/C U=IBMUSER （cancel user“IBMUSER”）</p>
+<hr>
+<p>HLQ=USERID=ALIAS    CATALOG  VTOC<br>SMS (STORAGE MANAGE SYSTEM)  (user don’t need to specify the volume)<br>config the SMS parameter<br>(1)ISMF GUI<br>(2)utility    basic model:DFSMSdfp<br>              selective model: DFSMSdss、DFSMSrmm、DFSMShsm<br>Attribute:DC（Data Class attribute）/SC（Storage Class attribute）/MC（Management Class attribute）/SG（Storage Group attribute）     and ASC（Automatic Class Selection）</p>
+<hr>
+<p>strong:IPL  RACF(safe management)  database<br>RACF basic struture:groups (superior group/subgroup)   /users/resources<br>group type:USER/FUNCTIONAL/HOLDING/DATA CONTROL/ADMINISTRATIVE<br>operation command:SEARCH/LISTGROUP/ADDGROUP/ALTGROUP/DELGROUP/CONNECT/REMOVE<br>the right of user connect the group: USE CREATE CONNECT JOIN</p>
+<hr>
+<p>look the information of group“TEST”<br>//IBMUSERC JOB 1,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//STEP1    EXEC PGM=IKJEFT01,DYNAMNBR=20,REGION=4096K<br>//SYSPRINT DD DUMMY<br>//SYSTSPRT DD SYSOUT=<em><br>//SYSTSIN    DD </em><br>    LISTGRP TEST<br>/*<br>//</p>
+<hr>
+<p>定义用户编目USERCAT.Z19.IBMUSER<br>//IBMUSERA JOB 2017,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//RACF01   EXEC PGM=IDCAMS<br>//SYSPRINT DD SYSOUT=<em><br>//SYSIN    DD </em><br>    DEFINE UCAT（                                                         +<br>                NAME（USERCAT.Z19.IBMUSER）                               +<br>                VOL（USER01）                                             +<br>                CYL（1,1）                                                +<br>                ）<br>/*</p>
+<hr>
+<p>查看用户编目USERCAT.Z19.IBMUSER的接口<br>//IBMUSERA JOB 2017,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//RACF02   EXEC PGM=IDCAMS<br>//SYSPRINT DD SYSOUT=<em><br>//SYSIN    DD </em><br>    LISTCAT USERCATALOG ENTRIES（USERCAT.Z19.IBMUSER） ALL<br>/*</p>
+<hr>
+<p>在组TEST下定义子组SAGRP<br>//IBMUSERA JOB 2017,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//RACF03   EXEC PGM=IKJEFT01,DYNAMNBR=20<br>//SYSPRINT DD SYSOUT=<em><br>//SYSTSPRT DD SYSOUT=</em><br>//SYSUADS  DD DSN=SYS1.UADS,DISP=SHR<br>//SYSLBC   DD DSN=SYS1.BRODCAST,DISP=SHR<br>//SYSTSIN    DD <em><br>    AG SAGRP SUPGROUP（TEST） OWNER（IBMUSER）<br>/</em></p>
+<hr>
+<p>定义别名，与用户编目关联<br>//IBMUSERA JOB 2017,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//RACF04   EXEC PGM=IDCAMS<br>//SYSPRINT DD SYSOUT=<em><br>//SYSIN    DD </em><br>    DEF ALIAS（NAME（SA001） RELATE（USERCAT.Z19.IBMUSER））<br>    DEF ALIAS（NAME（SA002） RELATE（USERCAT.Z19.IBMUSER））<br>    DEF ALIAS（NAME（SA003） RELATE（USERCAT.Z19.IBMUSER））<br>    DEF ALIAS（NAME（SA004） RELATE（USERCAT.Z19.IBMUSER））<br>    DEF ALIAS（NAME（SA005） RELATE（USERCAT.Z19.IBMUSER））<br>/*</p>
+<hr>
+<p>添加一个进程库（TSOPROC需要实体文件支持）<br>在系统数据集ADCD.Z19.PROCLIB中 S SAPROC;COPY DBSPROC9<br>ACCTNUM类不需要实体文件支持<br>新建两个通用资源，一个是TSOPROC类的名叫TSOPROC的资源，另一个是ACCTNUM类的名叫12345678的资源<br>//IBMUSERA JOB 2017,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//RACF05   EXEC PGM=IKJEFT01,DYNAMNBR=20<br>//SYSPRINT DD DUMMY<br>//SYSTSPRT DD SYSOUT=<em><br>//SYSTSIN  DD </em><br>   RDEF TSOPROC SAPROC UACC(NONE)<br>   RDEF ACCTNUM 12345678 UACC(NONE)<br>/*<br>查看：M.3  2   9  CLASS=TSOPROC或者ACCTNUM</p>
+<hr>
+<p>授权PERMIT<br>//IBMUSERA JOB 2017,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//RACF06   EXEC PGM=IKJEFT01,DYNAMNBR=20<br>//SYSPRINT DD DUMMY<br>//SYSTSPRT DD SYSOUT=<em><br>//SYSTSIN  DD </em><br>   PE SAPROC CL(TSOPROC) ID(SAGRP) ACC(UPDATE)<br>   PE 12345678 CL(ACCTNUM) ID(SAGRP) ACC(UPDATE)<br>   PE JCL    CL(TSOAUTH) ID(SAGRP) ACC(ALTER)<br>   PE OPER     CL(TSOAUTH) ID(SAGRP) ACC(READ)<br>/*</p>
+<hr>
+<p>刷新RACF列表，使授权生效<br>//IBMUSERA JOB 2017,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//RACF07   EXEC PGM=IKJEFT01,DYNAMNBR=20<br>//SYSPRINT DD DUMMY<br>//SYSTSPRT DD SYSOUT=<em><br>//SYSTSIN  DD </em><br>   SETR RACLIST(TSOPROC) REFRESH<br>   SETR RACLIST(ACCTNUM) REFRESH<br>   SETR RACLIST(TSOAUTH) REFRESH<br>   SETR GENERIC(<em>) REFRESH<br>/</em></p>
+<hr>
+<p>添加用户到新建的组SAGRP<br>//IBMUSERA JOB 2017,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//RACF08   EXEC PGM=IKJEFT01,DYNAMNBR=20<br>//SYSPRINT DD DUMMY<br>//SYSTSPRT DD SYSOUT=<em><br>//SYSLBC   DD DSN=SYS1.BRODCAST,DISP=SHR<br>//SYSTSIN  DD </em><br>   AU SA001 OWNER(SAGRP) DFLTGRP(SAGRP)   -<br>   PASS(1) TSO(PROC(SAPROC) ACCTNUM(12345678) SIZE(4096))<br>   AU SA002 OWNER(SAGRP) DFLTGRP(SAGRP)   -<br>   PASS(1) TSO(PROC(SAPROC) ACCTNUM(12345678) SIZE(4096))<br>   AU SA003 OWNER(SAGRP) DFLTGRP(SAGRP)   -<br>   PASS(1) TSO(PROC(SAPROC) ACCTNUM(12345678) SIZE(4096))<br>   AU SA004 OWNER(SAGRP) DFLTGRP(SAGRP)   -<br>   PASS(1) TSO(PROC(SAPROC) ACCTNUM(12345678) SIZE(4096))<br>   AU SA005 OWNER(SAGRP) DFLTGRP(SAGRP)   -<br>   PASS(1) TSO(PROC(SAPROC) ACCTNUM(12345678) SIZE(4096))<br>/*</p>
+<hr>
+<p>各用户之间的数据集的访问权限<br>//IBMUSERA JOB 2017,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//RACF09   EXEC PGM=IKJEFT01,DYNAMNBR=20<br>//SYSTSPRT DD SYSOUT=<em><br>//SYSTSIN  DD </em><br>   ADDSD ‘SA001.<em>‘ OWNER(SA001) UACC(NONE)<br>   ADDSD ‘SA002.</em>‘ OWNER(SA002) UACC(NONE)<br>   ADDSD ‘SA003.<em>‘ OWNER(SA003) UACC(NONE)<br>   ADDSD ‘SA004.</em>‘ OWNER(SA004) UACC(NONE)<br>   ADDSD ‘SA005.<em>‘ OWNER(SA005) UACC(NONE)<br>/</em></p>
+<hr>
+
+        </div>
+      </article>
+    </div>
+    <!-- Pre or Next -->
+    
+	<div class="container" >
+           <ul class="pager">
+    	     
+           
+              <li class="next">
+              <a href="/2017/06/30/cics/" rel="prev">上一篇</a>
+            </li>
+           
+          </ul>
+       </div>
+　　　　<!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">留言</h1> -->
+
+  
+    <!-- 多说评论框 start -->
+        <script type="text/javascript">
+var duoshuoQuery = {short_name:"evilinf"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+    <div class="ds-thread" data-thread-key="post-ibmjclm" data-title="IBM大型机系统管理" data-url="http://yoursite.com/2017/07/12/ibmjclm/"></div>
+    <!-- 多说评论框 end -->
+  
+</section>
+
+
+    </div>
+   
+　　　　
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+      <div class="header-content">
+        <div class="header-info-link">
+          <% if (config.social) { %>
+            <% _.forIn(config.social, function(val, key){ %>
+              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+            <% }) %>
+          <% } else { %>
+            <% _.forIn(theme.social, function(val, key){ %>
+              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+            <% }) %>
+          <% } %>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span><%- config.title %> &copy; <%= (new Date()).getFullYear() %></span>
+    <% if(config.footer !== null) { %>
+      <span class="split">|</span>
+      <span><%- config.footer || theme.footer %></span>
+    <% } %>
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'evilinf'};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+      </script>
+    <!-- 多说公共JS代码 end -->
+
+
+
+</body>
+
+</html>
