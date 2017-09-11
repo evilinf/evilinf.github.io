@@ -18,7 +18,7 @@
 
   <!--Open Graph Title-->
   
-      <meta property="og:title" content="bitmap实现“属性标签化”"/>
+      <meta property="og:title" content="����"/>
   
   <!--Open Graph Description-->
   
@@ -46,7 +46,7 @@
     </script>
   <!-- Title -->
   
-  <title>bitmap实现“属性标签化” - Evilinf</title>
+  <title>���� - Evilinf</title>
 
 
   <link rel="shortcut icon" href="http://odhn7mrx6.bkt.clouddn.com/logo.jpg">
@@ -156,19 +156,25 @@
         <!-- Title date & tags -->
         <div class="post-header">
           <h1 class="entry-title">
-            bitmap实现“属性标签化”
+            ����
             
           </h1>
          
         </div>
          <p class="a-posted-on">
-          2017-08-08
+          2017-09-11
           </p>
         <!-- Post Main Content -->
         <div class="entry-content">
-          <p><link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><br><img class="img-thumbnail" src="http://odhn7mrx6.bkt.clouddn.com/tag.JPG" alt="标签"></p>
-<p></p><p>原文地址：</p><a href="http://mp.weixin.qq.com/s/tLL9IB5Tj8486lf11EAskQ" target="_blank" rel="external">http://mp.weixin.qq.com/s/tLL9IB5Tj8486lf11EAskQ</a><p></p>
-<div class="container"><br><p>原本统计求交集的SQL语句为：SELECT COUNT(distinct name) as 用户数 from 用户表 where 属性1=’值’ and 属性2=’值’……</p><br><p>标签较少的话还可以，但是用户或标签变多查询的性能会大大降低</p><br><h3>bitmap思想操作：</h3><br>    <ul><li>建立用户名和用户ID的映射；</li><br>    <li>让每一个标签存储包含此标签的所有的用户ID，每个标签都是一个独立的bitmap；</li><br>    <li>这样，实现用户的去重和查询统计，就变得一目了然。</li></ul><br><h3>优点：</h3><br>    <ul><li>Hashset和Hashmap，每个用户的ID需要存储为int类型，而用户在bitmap中只占一个bit，内存节省；</li><br>    <li>在做交集和并集运算时，性能较快。</li><ul><br><h3>缺点：</h3><br>    <p>不支持非运算。</p><br><b>RoaringBitmap</b>   <br>              <b>EWAHCompressedBitmap</b> <br><br></ul></ul></div>
+          <p><link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></p>
+<hr>
+<h3 id="�ٶ�2017�����б������ܽ�"><a href="#�ٶ�2017�����б������ܽ�" class="headerlink" title="�ٶ�2017�����б������ܽ�"></a>�ٶ�2017�����б������ܽ�</h3><h5 id="�߼��z��⣨���֡�ͼ�Ρ���λ�ou�"><a href="#�߼��z��⣨���֡�ͼ�Ρ���λ�ou�" class="headerlink" title="�߼��ƶ��⣨���֡�ͼ�Ρ���λ�ȣ�"></a>�߼��ƶ��⣨���֡�ͼ�Ρ���λ�ȣ�</h5><p><b>������һ�����������ģ������������ڱ�ʾ��������������ʾ�ϣ���������Ӧ�ñ�ʾʲô����?<b></b></b></p>
+<h5 id="��ѧ������"><a href="#��ѧ������" class="headerlink" title="��ѧ������"></a>��ѧ������</h5><p>�������������漰���ܶ���ѧ�����ʣ�ָ����ȡ��������<br><b>�¼�A��B��C�����ĸ�����98%��A�����ĸ�����41%��B�����ĸ�����59%��A��Bͬʱ�����ĸ�����15%��A��Cͬʱ�����ĸ�����25%��B��Cͬʱ�����ĸ�����20%��A��B��Cͬʱ�����ĸ�����14%���ʣ�C�����ĸ����Ƕ��٣�<b></b></b></p>
+<h5 id="����������"><a href="#����������" class="headerlink" title="����������"></a>����������</h5><p><b>������8�ַ�ʽ�ı䡰computer������ĸ˳������ô�������Ĵ��У���p���롰e�����ڵĴ��м�����ѡ���У�720,5040,10080,40320</b></p>
+<h5 id="�������γ����ص���"><a href="#�������γ����ص���" class="headerlink" title="�������γ����ص���"></a>�������γ����ص���</h5><p>���ݿ⣺ģ����ѯ������SQL�����⣬��������ʽ��<br><b>“%”,”<em>%”,”%</em>“,”__”ǰ�ĸ�����������ѯ����һ����</b><br>���������磺OSI�߲�ģ�͡�3������4�λ���<br><b>ʵʱ·���������÷�����OSI����һ�㣿</b><br>������ͬ�����߳�<br><b>synchronized(����)��ʲô���͵ı����ᱨ��</b><br><b>�߳���������������</b><br>public class Salt implements Runnable<br>{<br>  string Spice= ‘YES’;<br>  public void run()<br>  {<br>    this.Spice=’NO’;<br>  }<br>  public static void main(string[] args)throw InterruptedException<br>  {<br>    Salt t=new Salt();<br>    Thread spice_t=new Thread(t);<br>    spice_t.start();<br>    spice_t.sleep(1000);<br>    for(int i=0;i&lt;10;i++)<br>    {<br>      System.out.print(spice_t.Spice);<br>    }<br>  }<br>}</p>
+<h3 id="3��������"><a href="#3��������" class="headerlink" title="3��������"></a>3��������</h3><p>ƽʱ�����ȰѸ��������㷨���£������ϣ������Ϳ��������㴦������һ�����˰��죬���Ĵ�������1/2=0,1.0/2=0.5</p>
+<hr>
+
         </div>
       </article>
     </div>
@@ -177,13 +183,9 @@
 	<div class="container" >
            <ul class="pager">
     	     
-      	     <li class="previous">
-              <a href="/2017/09/11/writtenExam/" rel="prev">下一篇</a>
-             </li>
-           
            
               <li class="next">
-              <a href="/2017/07/12/ibmjclm/" rel="prev">上一篇</a>
+              <a href="/2017/08/08/bitmap/" rel="prev">上一篇</a>
             </li>
            
           </ul>
@@ -207,7 +209,7 @@ var duoshuoQuery = {short_name:"evilinf"};
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
 	</script>
-    <div class="ds-thread" data-thread-key="post-bitmap" data-title="bitmap实现“属性标签化”" data-url="http://yoursite.com/2017/08/08/bitmap/"></div>
+    <div class="ds-thread" data-thread-key="post-writtenExam" data-title="����" data-url="http://yoursite.com/2017/09/11/writtenExam/"></div>
     <!-- 多说评论框 end -->
   
 </section>
