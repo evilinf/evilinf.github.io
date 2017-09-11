@@ -224,8 +224,8 @@
     <span class="date">
       2017-05-02
     </span>
-    <a href="/2017/05/02/film/" class="title">
-      电影推荐
+    <a href="/2017/05/02/finance/" class="title">
+      融资
     </a>
   </li>
 
@@ -233,8 +233,8 @@
     <span class="date">
       2017-05-02
     </span>
-    <a href="/2017/05/02/finance/" class="title">
-      融资
+    <a href="/2017/05/02/film/" class="title">
+      电影推荐
     </a>
   </li>
 
@@ -339,27 +339,30 @@
 <div class="footer-widgets">
       <div class="header-content">
         <div class="header-info-link">
-          <% if (config.social) { %>
-            <% _.forIn(config.social, function(val, key){ %>
-              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
-            <% }) %>
-          <% } else { %>
-            <% _.forIn(theme.social, function(val, key){ %>
-              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
-            <% }) %>
-          <% } %>
+          
+            
+              <a href="https://github.com/evilinf" class="icon icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            
+              <a href="https://www.zhihu.com/people/hui-liu-lei-de-yu-54" class="icon icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            
+              <a href="https://www.facebook.com/profile.php?id=100012241389629" class="icon icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            
+          
         </div>
     </div>
 </div>
 <!-- Footer -->
 <footer class="site-info">
   <p>
-    <span><%- config.title %> &copy; <%= (new Date()).getFullYear() %></span>
-    <% if(config.footer !== null) { %>
+    <span>Evilinf &copy; 2017</span>
+    
       <span class="split">|</span>
-      <span><%- config.footer || theme.footer %></span>
-    <% } %>
+      <span>The Sea of Evilinf</span>
+    
   </p>
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </footer>
 
 
