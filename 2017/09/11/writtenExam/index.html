@@ -183,7 +183,7 @@
 <h4 id="IBM的面试有英文部分，英文问与答，英文自我介绍"><a href="#IBM的面试有英文部分，英文问与答，英文自我介绍" class="headerlink" title="IBM的面试有英文部分，英文问与答，英文自我介绍"></a>IBM的面试有英文部分，英文问与答，英文自我介绍</h4><hr>
 <h3 id="所有的面试都会问一个问题“你想去哪个城市”"><a href="#所有的面试都会问一个问题“你想去哪个城市”" class="headerlink" title="所有的面试都会问一个问题“你想去哪个城市”"></a>所有的面试都会问一个问题“你想去哪个城市”</h3><p></p><p class="text-danger">不要犹豫和彷徨，就是面试公司所在城市</p><p></p>
 <p></p><h1>招商银行２０１７年笔试题</h1><p></p>
-<h5>Ｈａｓｈ表</h5><br>１．设有一个含有13个元素的Hash表(O~12),Hash函数是:H(key)=key % 13,其中%是求余数运算.用线性探查法解决冲突,则对于序列(2、8、31、20、19、18、53、27),18应放在第几号格中( ) .<br><p class="text-danger">A) 5</p> B) 9 C) 4 D) 0<br>２．一个字段大概为6-18长度，问设置为什麽数据类型较为节约空间<p class="text-danger">ｖａｒｃｈａｒ（１０）</p><br><h5>几种排序的时间复杂度等</h5><br><table class="table table-hover"><br>  <th></th><td>排序法</td><td>最差时间分析</td><td>平均时间复杂度</td><td>稳定度</td><td>空间复杂度</td><br>  <tr><td>冒泡排序</td><td>O(n2)</td><td>O(n2)</td><td>稳定</td><td>O(1)</td></tr><br>  <tr　class="text-danger"><td>快速排序</td><td>O(n2)</td><td>O(n<em>log2n)</em></td><td>不稳定</td><td>O(log2n)~O(n)</td><br>  <tr><td>选择（分区）排序</td><td>O(n2)</td><td>O(n2)</td><td>稳定</td><td>O(1)</td></tr><br>  <tr　class="text-danger"><td>二叉树排序</td><td>O(n2)</td><td>O(nlog2n)</td><td>稳定</td><td>O(n)</td><br>  <tr><td>插入排序</td><td>O(n2)</td><td>O(n2)</td><td>稳定</td><td>O(1)</td></tr><br>  <tr　class="text-danger"><td>堆排序</td><td>O(n<em>log2n)</em></td><td>O(nlog2n)</td><td>不稳定</td><td>O(1)</td><br>  <tr><td>希尔排序</td><td>O</td><td>O（ｎ１．５）</td><td>不稳定</td><td>O(1)</td></tr><br></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></table><br><h5>析构函数</h5><br> 析构函数名也应与类名相同，只是在函数名前面加一个位取反符~，例如~stud( )，以区别于构造函数。它不能带任何参数，也没有返回值（包括void类型）。只能有一个析构函数，不能重载。如果用户没有编写析构函数，编译系统会自动生成一个缺省的析构函数（即使自定义了析构函数，编译器也总是会为我们合成一个析构函数，并且如果自定义了析构函数，编译器在执行时会先调用自定义的析构函数再调用合成的析构函数），它也不进行任何操作。所以许多简单的类中没有用显式的析构函数。<br><h5>虚函数</h5><br>在某基类中声明为 virtual 并在一个或多个派生类中被重新定义的成员函数，用法格式为：virtual 函数返回类型 函数名（参数表） {函数体}；实现多态性，通过指向派生类的基类指针或引用，访问派生类中同名覆盖成员函数<br>基类 对象=new 派生类（）　如果将基类方法修饰成ｖｉｒｔｕａｌ，则派生类的方法也对应是ｖｉｒｔｕａｌ，同时也就实现了使用派生类的方法<br><h5>ＩＰ地址＋子网掩码－〉子网号</h5><br>例：ＩＰ地址：１０．６．２４．０　　子网掩码：２５５．２５５．２４０．０　<p class="text-danger">按位与　１０．６．ＸＸ．０</p><br><b>最终输出结果：</b><br><pre><br>public ｓｔａｔｉｃ　ｖｏｉｄ　ｍａｉｎ（ｓｔｒｉｎｇ［］　ａｒｇｓ）<br>{<br>  Ｌｉｓｔ＜Ｉｎｔｅｇｅｒ＞　ｌｉ＝ｎｅｗ　ＡｒｒａｙＬｉｓｔ＜＞（）；<br>  ｌｉ．ａｄｄ（６）；<br>  ｌｉ．ａｄｄ（９）；<br>  Ｌｉｓｔ　ｌｉｓｔ＝ｌｉ；<br>  Ｌｉｓｔ＜ｓｔｒｉｎｇ＞　ｌｓ＝ｌｉｓｔ；<br>  Ｓｙｓｔｅｍ．ｏｕｔ．ｐｒｉｎｔｌｎ（ｌｓ．ｇｅｔ（１））；<br>}<br> </pre><br> <h5>Ｓｅｒｖｅｌｔ过滤器</h5><br>定义：过滤器就是可以对浏览器向jsp，servlet，html等这些web资源发出请求和服务器回应给浏览器的内容，他可以进行过滤。<br>用途：授权管理；统计web应用的访问量，和访问的命中率，报告；实现web应用的日志处理功能；实现数据压缩功能；对传输的数据进行加密；实现XML文件的XSLT转换；<br> <h5>ＴＣＰ连接中，客户端会发生发送连接请求／创建套接字／关闭套接字</h5><br>服务端要监听，所以需要绑定端口。这样客户端才能根据IP地址和端口号访问服务器，客户端的端口是随机分配的。是从还没有使用的端口中分配的。当服务器端收到一个客户端的连接，socket里面有个叫End啥的，就存着那个连接过来的客户端的IP地址和端口了。<br> <h5>数据类型字节长度</h5><br>byte 1个字节 short 2个字节 char 2个字节 int 4个字节 float 4个字节 double 8个字节 long 8个字节<br> <h5>以俩个字段为条件的分组</h5><br>select lb,grade,count(*) from fend group by (lb,grade);<br> <h5>进程状态转换，那些是不行的？</h5><br> A.就绪状态→执行状态　B.执行状态→就绪状态　 C.执行状态→阻塞状态　 <p class="text-danger">D.就绪状态→阻塞状态</p><br> <h5>固定分配存储管理</h5>
+<h3>Ｈａｓｈ表</h3><br>１．设有一个含有13个元素的Hash表(O~12),Hash函数是:H(key)=key % 13,其中%是求余数运算.用线性探查法解决冲突,则对于序列(2、8、31、20、19、18、53、27),18应放在第几号格中( ) .<br><p class="text-danger">A) 5</p> B) 9 C) 4 D) 0<br>２．一个字段大概为6-18长度，问设置为什麽数据类型较为节约空间<p class="text-danger">ｖａｒｃｈａｒ（１０）</p><br><h3>几种排序的时间复杂度等</h3><br><table class="table table-hover"><br>  <tr><th>排序法</th><th>最差时间分析</th><th>平均时间复杂度</th><th>稳定度</th><th>空间复杂度</th></tr><br>  <tr><td>冒泡排序</td><td>O(n2)</td><td>O(n2)</td><td>稳定</td><td>O(1)</td></tr><br>  <tr　class="text-danger"><td>快速排序</td><td>O(n2)</td><td>O(n<em>log2n)</em></td><td>不稳定</td><td>O(log2n)~O(n)</td><br>  <tr><td>选择（分区）排序</td><td>O(n2)</td><td>O(n2)</td><td>稳定</td><td>O(1)</td></tr><br>  <tr　class="text-danger"><td>二叉树排序</td><td>O(n2)</td><td>O(nlog2n)</td><td>稳定</td><td>O(n)</td><br>  <tr><td>插入排序</td><td>O(n2)</td><td>O(n2)</td><td>稳定</td><td>O(1)</td></tr><br>  <tr　class="text-danger"><td>堆排序</td><td>O(n<em>log2n)</em></td><td>O(nlog2n)</td><td>不稳定</td><td>O(1)</td><br>  <tr><td>希尔排序</td><td>O</td><td>O（ｎ１．５）</td><td>不稳定</td><td>O(1)</td></tr><br></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></table><br><h3>析构函数</h3><br> 析构函数名也应与类名相同，只是在函数名前面加一个位取反符~，例如~stud( )，以区别于构造函数。它不能带任何参数，也没有返回值（包括void类型）。只能有一个析构函数，不能重载。如果用户没有编写析构函数，编译系统会自动生成一个缺省的析构函数（即使自定义了析构函数，编译器也总是会为我们合成一个析构函数，并且如果自定义了析构函数，编译器在执行时会先调用自定义的析构函数再调用合成的析构函数），它也不进行任何操作。所以许多简单的类中没有用显式的析构函数。<br><h3>虚函数</h3><br>在某基类中声明为 virtual 并在一个或多个派生类中被重新定义的成员函数，用法格式为：virtual 函数返回类型 函数名（参数表） {函数体}；实现多态性，通过指向派生类的基类指针或引用，访问派生类中同名覆盖成员函数<br>基类 对象=new 派生类（）　如果将基类方法修饰成ｖｉｒｔｕａｌ，则派生类的方法也对应是ｖｉｒｔｕａｌ，同时也就实现了使用派生类的方法<br><h3>ＩＰ地址＋子网掩码－〉子网号</h3><br>例：ＩＰ地址：１０．６．２４．０　　子网掩码：２５５．２５５．２４０．０　<p class="text-danger">按位与　１０．６．ＸＸ．０</p><br><b>最终输出结果：</b><br><pre><br>public ｓｔａｔｉｃ　ｖｏｉｄ　ｍａｉｎ（ｓｔｒｉｎｇ［］　ａｒｇｓ）<br>{<br>  Ｌｉｓｔ＜Ｉｎｔｅｇｅｒ＞　ｌｉ＝ｎｅｗ　ＡｒｒａｙＬｉｓｔ＜＞（）；<br>  ｌｉ．ａｄｄ（６）；<br>  ｌｉ．ａｄｄ（９）；<br>  Ｌｉｓｔ　ｌｉｓｔ＝ｌｉ；<br>  Ｌｉｓｔ＜ｓｔｒｉｎｇ＞　ｌｓ＝ｌｉｓｔ；<br>  Ｓｙｓｔｅｍ．ｏｕｔ．ｐｒｉｎｔｌｎ（ｌｓ．ｇｅｔ（１））；<br>}<br> </pre><br> <h3>Ｓｅｒｖｅｌｔ过滤器</h3><br>定义：过滤器就是可以对浏览器向jsp，servlet，html等这些web资源发出请求和服务器回应给浏览器的内容，他可以进行过滤。<br>用途：授权管理；统计web应用的访问量，和访问的命中率，报告；实现web应用的日志处理功能；实现数据压缩功能；对传输的数据进行加密；实现XML文件的XSLT转换；<br> <h3>ＴＣＰ连接中，客户端会发生发送连接请求／创建套接字／关闭套接字</h3><br>服务端要监听，所以需要绑定端口。这样客户端才能根据IP地址和端口号访问服务器，客户端的端口是随机分配的。是从还没有使用的端口中分配的。当服务器端收到一个客户端的连接，socket里面有个叫End啥的，就存着那个连接过来的客户端的IP地址和端口了。<br> <h3>数据类型字节长度</h3><br>byte 1个字节 short 2个字节 char 2个字节 int 4个字节 float 4个字节 double 8个字节 long 8个字节<br> <h3>以俩个字段为条件的分组</h3><br>select lb,grade,count(*) from fend group by (lb,grade);<br> <h3>进程状态转换，那些是不行的？</h3><br> A.就绪状态→执行状态　B.执行状态→就绪状态　 C.执行状态→阻塞状态　 <p class="text-danger">D.就绪状态→阻塞状态</p><br> <h3>固定分配存储管理</h3>
 
         </div>
       </article>
@@ -237,27 +237,30 @@ var duoshuoQuery = {short_name:"evilinf"};
 <div class="footer-widgets">
       <div class="header-content">
         <div class="header-info-link">
-          <% if (config.social) { %>
-            <% _.forIn(config.social, function(val, key){ %>
-              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
-            <% }) %>
-          <% } else { %>
-            <% _.forIn(theme.social, function(val, key){ %>
-              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
-            <% }) %>
-          <% } %>
+          
+            
+              <a href="https://github.com/evilinf" class="icon icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            
+              <a href="https://www.zhihu.com/people/hui-liu-lei-de-yu-54" class="icon icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            
+              <a href="https://www.facebook.com/profile.php?id=100012241389629" class="icon icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            
+          
         </div>
     </div>
 </div>
 <!-- Footer -->
 <footer class="site-info">
   <p>
-    <span><%- config.title %> &copy; <%= (new Date()).getFullYear() %></span>
-    <% if(config.footer !== null) { %>
+    <span>Evilinf &copy; 2017</span>
+    
       <span class="split">|</span>
-      <span><%- config.footer || theme.footer %></span>
-    <% } %>
+      <span>The Sea of Evilinf</span>
+    
   </p>
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </footer>
 
 
