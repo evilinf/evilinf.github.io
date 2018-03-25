@@ -1,652 +1,203 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-<!-- Head tag -->
+<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!--Description-->
   
-
-  <!--Author-->
-  
-  <meta name="author" content="evilinf">
-  
-
-  <!--Open Graph Title-->
-  
-      <meta property="og:title" content="相册"/>
-  
-  <!--Open Graph Description-->
-  
-  <!--Open Graph Site Name-->
-  <meta property="og:site_name" content="Evilinf"/>
-  <!--Type page-->
-  
-      <meta property="og:type" content="article" />
-  
-  <!--Page Cover-->
-  
-
+  <title>相册 | Evilinf</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- 百度统计 -->
-    <script>
-	var _hmt = _hmt || [];
-	(function() {
-  	var hm = document.createElement("script");
-  	hm.src = "https://hm.baidu.com/hm.js?c0451e16533956173997b85f7a8de666";
-  	var s = document.getElementsByTagName("script")[0]; 
-  	s.parentNode.insertBefore(hm, s);
-	})();
-    </script>
-  <!-- Title -->
+  <meta property="og:type" content="website">
+<meta property="og:title" content="相册">
+<meta property="og:url" content="https://evilinf.github.io/photo/index.html">
+<meta property="og:site_name" content="Evilinf">
+<meta property="og:updated_time" content="2017-04-09T12:40:13.931Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="相册">
   
-  <title>相册 - Evilinf</title>
-
-
-  <link rel="shortcut icon" href="http://odhn7mrx6.bkt.clouddn.com/logo.jpg">
-    <!--font-awesome-->
-  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Custom CSS/Sass -->
+    <link rel="alternate" href="/atom.xml" title="Evilinf" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
   <link rel="stylesheet" href="/css/style.css">
+  
 
 </head>
 
-
 <body>
-
-  <!-- Nav -->
-  <header class="site-header">
-  <div class="header-inside">
-    
-    <div class="logo">
-      <a href="/" rel="home">
-        
-        <img src="http://odhn7mrx6.bkt.clouddn.com/logo2.jpg" alt="Evilinf" height="60">
-        
-      </a>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Evilinf</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">临渊羡鱼，不如退而织网</a>
+        </h2>
+      
     </div>
-    <a class="header-name" href="/">
-            <span>Evilinf</span>
-            的部落宅
-        </a>
-    <!-- navbar -->
-    <nav class="navbar">
-      <!--  nav links -->
-      <div class="collapse">
-        <ul class="navbar-nav">
-          
-          
-            <li>
-              <a href="/.">
-                
-                  <i class="fa fa-home "></i>
-                
-                首页
-              </a>
-            </li>
-          
-            <li>
-              <a href="/archives">
-                
-                  <i class="fa fa-archive "></i>
-                
-                归档
-              </a>
-            </li>
-          
-            <li>
-              <a href="/about">
-                
-                  <i class="fa fa-user "></i>
-                
-                关于
-              </a>
-            </li>
-          
-            <li>
-              <a href="/project">
-                
-                  <i class="fa fa-folder-open "></i>
-                
-                项目
-              </a>
-            </li>
-          
-            <li>
-              <a href="/photo">
-                
-                  <i class="fa fa-photo "></i>
-                
-                相册
-              </a>
-            </li>
-          
-            <li>
-              <a href="/guestbook">
-                
-                  <i class="fa fa-edit "></i>
-                
-                留言
-              </a>
-            </li>
-          
-        </ul>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://evilinf.github.io"></form>
       </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-    <div class="button-wrap">
-      <button class="menu-toggle">Primary Menu</button>
     </div>
   </div>
 </header>
-
-
-  <!-- Main Content -->
-  <style>
-
-#container {
-    margin: auto;
-    max-width: 1280px;
-    margin-top: 5em;
-    margin-bottom: 60px;
-    animation: cont 0.3s;
-    border-radius: 3px;
-    background-color: #fff;
-    padding: 20px 0px 15px 0px;
-    clear: both;
-}
-.about-me .counts, .about-me .profile {
-    border-bottom: 1px solid #eee;
-    margin: 0 0 3%;
-    padding: 0 0 3%;
-    text-align: center;
-}
-.about-me .avatar-450 {
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    border-radius: 100%;
-    border: 3px solid #F2F5F7;
-}
-.avatar-450 {
-    width: 30%;
-    max-width: 150px;
-    height: auto;
-    border-radius: 100%;
-}
-.about-me .about-avatar, .about-me .info {
-    display: inline-block;
-    vertical-align: top;
-    letter-spacing: 0;
-    margin-top: -15px;
-}
-.about-me .info {
-    width: 30%;
-    padding-left: 15px;
-}
-.about-me .info h1 {
-    font-weight: 700;
-    font-size: 20px;
-    color: #333;
-    word-break: break-all;
-}
-.about-me .info h1, .about-me p {
-    color: rgba(0,0,0,.6);
-    width: 100%;
-    display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.prandom ul{
-    overflow: hidden;
-    text-align: center;
-}
-.post-random .photo {
-    margin: 5px;
-    width: 23%;
-    display: inline-block;
-    line-height: 0;
-}
-.photo_shows {
-    position: relative;
-    margin-bottom: 2rem;
-}
-.photo_shows a .mask {
-    position: absolute;
-    font-size: 20px;
-    top: 30%;
-    bottom: 60%;
-    left: 0;
-    right: 0;
-    padding: 0 20px;
-    padding-top: 7em;
-    margin: auto;
-    color: transparent;
-    background: 0 0;
-    opacity: 0;
-    text-align: center;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-.photo_shows img {
-    width: 100%;
-    height: 100%;
-}
-.photo_shows a:hover .mask {
-    top: 0px;
-    bottom: 0px;
-    color: rgb(255, 255, 255);
-    opacity: 1;
-    background: rgba(0, 0, 0, 0.65098);
-}
-#imgbox-loading {
-    position: absolute;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    display: none;
-    z-index: 90;
-}
-
-#imgbox-loading div {
-    background: #FFF;
-    width: 100%;
-    height : 100%;
-}
-
-#imgbox-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000;
-    display: none;
-    z-index: 80;
-}
-
-.imgbox-wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #FFF;
-    display: none;
-    z-index: 90;
-}
-
-.imgbox-img {
-    padding: 0;
-    margin: 0;
-    border: none;
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-}
-
-.imgbox-close {
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    outline: none;
-}
-
-.imgbox-title {
-    padding-top: 10px;
-    font-size: 11px;
-    text-align: center;
-    font-family: Arial;
-    color: #333;
-    display: none;
-}
-
-.imgbox-bg-wrap {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.imgbox-bg {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-}
-
-.imgbox-bg-n {
-    left: 0;
-    top: -20px;
-    width: 100%;
-}
-
-.imgbox-bg-ne {
-    right: -20px;
-    top: -20px;
-}
-
-.imgbox-bg-e {
-    right: -20px;
-    top: 0;
-    height: 100%;
-}
-
-.imgbox-bg-se {
-    right: -20px;
-    bottom: -20px;
-}
-
-.imgbox-bg-s {
-    left: 0;
-    bottom: -20px;
-    width: 100%;
-}
-
-.imgbox-bg-sw {
-    left: -20px;
-    bottom: -20px;
-}
-
-.imgbox-bg-w {
-    left: -20px;
-    top: 0;
-    height: 100%;
-}
-
-.imgbox-bg-nw {
-    left: -20px;
-    top: -20px;
-}
-@media all and (max-width:1440px){
-    #container{max-width:1100px}
-    .post-random .photo {width: 23%;}
-}
-@media (max-width: 999px) {
-    #container {
-        width: 95%;
-        margin-top: 2em;
-    }
-}
-@media (max-width: 720px) {
-    #container {
-        box-shadow: rgba(0, 0, 0, 0.298039) 0px 0px 0px 0px, rgba(0, 0, 0, 0.298039) 0px 0px 0px 0px;
-        width: 94%;
-        margin: 10px auto auto -3px;
-        padding: 15px;
-
-    }
-    .post-random {
-        width: 100%;
-    }
-    .post-random .photo {
-        width: 32%;
-        display: inline-block;
-        box-sizing: border-box;
-        border-radius: 3px;
-        border-width: 1px;
-        border-style: solid;
-        border-color: rgba(0, 0, 0, 0.0470588);
-        border-image: initial;
-        margin: 0px;
-    }
-
-    .post-random .photo-item {
-        height: 100%;
-        background-size: cover;
-    }
-    .photo_shows a .mask {
-        padding-top: 50%;
-        font-size: 15px;
-    }
-}
-@media (max-width: 540px) {
-    .prandom {
-        margin: auto;
-        width: 114%;
-        margin-left: -20px;
-    }
-    .post-random {
-        width: 100%;
-    }
-    .post-random .photo {
-        border-radius: 3px;
-        border: 1px solid rgba(0,0,0,.05);
-        margin-bottom: 0;
-        width: 32%;
-        display: inline-block;
-        box-sizing: border-box;
-        margin: 0px;
-    }
-}
-</style>
-<div id="container">
-    <div class="about-me about_mob" style="display: inherit;">
-        <div class="profile">
-            <img alt="" src="http://odhn7mrx6.bkt.clouddn.com/avator.jpg"  class="avatar avatar-450 photo" height="450" width="450">
-            <div class="info aboutinfo">
-                <h1><span>Evilinf</span>的相册薄</h1>
-                <p>永远相信</p>
-                <p>美好的事情即将发生</p>
-            </div>
-        </div>
-    </div>
-    <div class="prandom">
-        <div class="post-random"><ul class="js-photos"><ul>
-            
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/dlxy.jpg" target="_blank">
-                      <div class="mask transition3">大连.夕阳</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/dlxy.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/friend2.JPG" target="_blank">
-                      <div class="mask transition3">朋友.海边</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/friend2.JPG">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/friends.jpg" target="_blank">
-                      <div class="mask transition3">朋友.交大</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/friends.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/hbjm.jpg" target="_blank">
-                      <div class="mask transition3">河北经贸大学</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/hbjm.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/rain.jpg" target="_blank">
-                      <div class="mask transition3">海边.雨天</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/rain.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/%E6%A3%92%E6%A3%B0%E5%B2%9B.jpg" target="_blank">
-                      <div class="mask transition3">大连.棒棰岛</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/%E6%A3%92%E6%A3%B0%E5%B2%9B.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/%E5%9B%BE%E4%B9%A6%E9%A6%86.jpg" target="_blank">
-                      <div class="mask transition3">大连交通大学.图书馆</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/%E5%9B%BE%E4%B9%A6%E9%A6%86.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD.jpg" target="_blank">
-                      <div class="mask transition3">大连.森林公园</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/%E6%A3%AE%E6%9E%97%E5%85%AC%E5%9B%AD.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/%E6%95%99%E5%AD%A6%E6%A5%BC.jpg" target="_blank">
-                      <div class="mask transition3">大连交通大学.教学楼</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/%E6%95%99%E5%AD%A6%E6%A5%BC.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img11.jpg" target="_blank">
-                      <div class="mask transition3">大连.星海</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img11.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img12.jpg" target="_blank">
-                      <div class="mask transition3">旅顺.海星</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img12.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img13.jpg" target="_blank">
-                      <div class="mask transition3">四川.广安</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img13.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img31.jpg" target="_blank">
-                      <div class="mask transition3">盘锦.红海滩</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img31.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img32.jpg" target="_blank">
-                      <div class="mask transition3">石家庄.柳堤</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img32.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img33.jpg" target="_blank">
-                      <div class="mask transition3">上海.城隍庙</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img33.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img22.jpg" target="_blank">
-                      <div class="mask transition3">华蓥.夫妻石</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img22.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img42.jpg" target="_blank">
-                      <div class="mask transition3">西安.钟楼</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img42.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img43.jpg" target="_blank">
-                      <div class="mask transition3">中华艺术宫</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img43.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img21.jpg" target="_blank">
-                      <div class="mask transition3">丹东.鸭绿江</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img21.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img41.jpg" target="_blank">
-                      <div class="mask transition3">大连.旅顺</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img41.jpg">
-                   </a>
-                </li>
-            
-                <li class="photo photo_shows">
-                   <a class="photo-item" href="http://odhn7mrx6.bkt.clouddn.com/img23.jpg" target="_blank">
-                      <div class="mask transition3">江南大学</div>
-                      <img src="http://odhn7mrx6.bkt.clouddn.com/img23.jpg">
-                   </a>
-                </li>
-            
-        </ul>
-        </ul></div></div>
-</div>
-<script type="text/javascript" src="http://oct3pmpde.bkt.clouddn.com/jquery.min.js"></script>
-<script type="text/javascript" src="http://oct3pmpde.bkt.clouddn.com/jquery.imgbox.pack.js"></script>
-<script type="text/javascript">
-    $("a.photo-item").imgbox({'alignment':'center','zoomOpacity': true,'speedIn':0});
-</script>
-
-
-  <!-- Footer -->
-  <!-- Footer-widgets -->
-<div class="footer-widgets">
-      <div class="header-content">
-        <div class="header-info-link">
-          
-            
-              <a href="https://github.com/evilinf" class="icon icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            
-              <a href="https://www.zhihu.com/people/hui-liu-lei-de-yu-54" class="icon icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            
-              <a href="https://www.facebook.com/profile.php?id=100012241389629" class="icon icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            
-          
-        </div>
-    </div>
-</div>
-<!-- Footer -->
-<footer class="site-info">
-  <p>
-    <span>Evilinf &copy; 2018</span>
+      <div class="outer">
+        <section id="main"><article id="photo-undefined" class="article article-type-photo" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/photo/index.html" class="article-date">
+  <time datetime="2017-03-12T16:00:00.000Z" itemprop="datePublished">2017-03-13</time>
+</a>
     
-      <span class="split">|</span>
-      <span>The Sea of Evilinf</span>
+  </div>
+  <div class="article-inner">
     
-  </p>
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      相册
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://evilinf.github.io/photo/index.html" data-id="cjf6sdlqu0007hgqlg9ws9rnr" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/书本知识总结/">书本知识总结</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/读书笔记/">读书笔记</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/书本知识总结/" style="font-size: 10px;">书本知识总结</a> <a href="/tags/读书笔记/" style="font-size: 10px;">读书笔记</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/24/program/">Software CookBook</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/11/writtenExam/">笔试</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/08/bitmap/">bitmap实现“属性标签化”</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/12/ibmjclm/">IBM大型机系统管理</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/30/cics/">cics讲解</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 evilinf<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
 </footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <!-- After footer scripts -->
-  <!-- scripts -->
-<script src="/js/app.js"></script>
-
-  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:'evilinf'};
-      (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-      </script>
-    <!-- 多说公共JS代码 end -->
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
+<script src="/js/script.js"></script>
 
+  </div>
 </body>
-
 </html>

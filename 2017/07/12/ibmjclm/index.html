@@ -1,168 +1,95 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-<!-- Head tag -->
+<html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!--Description-->
   
-
-  <!--Author-->
-  
-  <meta name="author" content="evilinf">
-  
-
-  <!--Open Graph Title-->
-  
-      <meta property="og:title" content="IBM大型机系统管理"/>
-  
-  <!--Open Graph Description-->
-  
-  <!--Open Graph Site Name-->
-  <meta property="og:site_name" content="Evilinf"/>
-  <!--Type page-->
-  
-      <meta property="og:type" content="article" />
-  
-  <!--Page Cover-->
-  
-
+  <title>IBM大型机系统管理 | Evilinf</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <!-- 百度统计 -->
-    <script>
-	var _hmt = _hmt || [];
-	(function() {
-  	var hm = document.createElement("script");
-  	hm.src = "https://hm.baidu.com/hm.js?c0451e16533956173997b85f7a8de666";
-  	var s = document.getElementsByTagName("script")[0]; 
-  	s.parentNode.insertBefore(hm, s);
-	})();
-    </script>
-  <!-- Title -->
+  <meta name="description" content="SDSF、ISPF中使用的命令L MENBER                 定位MENBERFIND COND                 在MSG中找COND   F5查找下一个CONDS MEMBER1 ; COPY MENBER2             拷贝MENBER2生成MENBER1C NAME1 NAME2 ALL     将字符NAME1全部换成NAME2MAXCC最大">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IBM大型机系统管理">
+<meta property="og:url" content="https://evilinf.github.io/2017/07/12/ibmjclm/index.html">
+<meta property="og:site_name" content="Evilinf">
+<meta property="og:description" content="SDSF、ISPF中使用的命令L MENBER                 定位MENBERFIND COND                 在MSG中找COND   F5查找下一个CONDS MEMBER1 ; COPY MENBER2             拷贝MENBER2生成MENBER1C NAME1 NAME2 ALL     将字符NAME1全部换成NAME2MAXCC最大">
+<meta property="og:updated_time" content="2017-07-12T13:37:48.314Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="IBM大型机系统管理">
+<meta name="twitter:description" content="SDSF、ISPF中使用的命令L MENBER                 定位MENBERFIND COND                 在MSG中找COND   F5查找下一个CONDS MEMBER1 ; COPY MENBER2             拷贝MENBER2生成MENBER1C NAME1 NAME2 ALL     将字符NAME1全部换成NAME2MAXCC最大">
   
-  <title>IBM大型机系统管理 - Evilinf</title>
-
-
-  <link rel="shortcut icon" href="http://odhn7mrx6.bkt.clouddn.com/logo.jpg">
-    <!--font-awesome-->
-  <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- Custom CSS/Sass -->
+    <link rel="alternate" href="/atom.xml" title="Evilinf" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
   <link rel="stylesheet" href="/css/style.css">
+  
 
 </head>
 
-
 <body>
-
-  <!-- Nav -->
-  <header class="site-header">
-  <div class="header-inside">
-    
-    <div class="logo">
-      <a href="/" rel="home">
-        
-        <img src="http://odhn7mrx6.bkt.clouddn.com/logo2.jpg" alt="Evilinf" height="60">
-        
-      </a>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Evilinf</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">临渊羡鱼，不如退而织网</a>
+        </h2>
+      
     </div>
-    <a class="header-name" href="/">
-            <span>Evilinf</span>
-            的部落宅
-        </a>
-    <!-- navbar -->
-    <nav class="navbar">
-      <!--  nav links -->
-      <div class="collapse">
-        <ul class="navbar-nav">
-          
-          
-            <li>
-              <a href="/.">
-                
-                  <i class="fa fa-home "></i>
-                
-                首页
-              </a>
-            </li>
-          
-            <li>
-              <a href="/archives">
-                
-                  <i class="fa fa-archive "></i>
-                
-                归档
-              </a>
-            </li>
-          
-            <li>
-              <a href="/about">
-                
-                  <i class="fa fa-user "></i>
-                
-                关于
-              </a>
-            </li>
-          
-            <li>
-              <a href="/project">
-                
-                  <i class="fa fa-folder-open "></i>
-                
-                项目
-              </a>
-            </li>
-          
-            <li>
-              <a href="/photo">
-                
-                  <i class="fa fa-photo "></i>
-                
-                相册
-              </a>
-            </li>
-          
-            <li>
-              <a href="/guestbook">
-                
-                  <i class="fa fa-edit "></i>
-                
-                留言
-              </a>
-            </li>
-          
-        </ul>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://evilinf.github.io"></form>
       </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-    <div class="button-wrap">
-      <button class="menu-toggle">Primary Menu</button>
     </div>
   </div>
 </header>
+      <div class="outer">
+        <section id="main"><article id="post-ibmjclm" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/07/12/ibmjclm/" class="article-date">
+  <time datetime="2017-07-12T12:00:39.000Z" itemprop="datePublished">2017-07-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      IBM大型机系统管理
+    </h1>
+  
 
-
-  <!-- Main Content -->
-  <div class="content-area">
-  <div class="post">
-    <!-- Post Content -->
-    <div class="container">
-      <article>
-        <!-- Title date & tags -->
-        <div class="post-header">
-          <h1 class="entry-title">
-            IBM大型机系统管理
-            
-          </h1>
-         
-        </div>
-         <p class="a-posted-on">
-          2017-07-12
-          </p>
-        <!-- Post Main Content -->
-        <div class="entry-content">
-          <hr>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
 <h3 id="SDSF、ISPF中使用的命令"><a href="#SDSF、ISPF中使用的命令" class="headerlink" title="SDSF、ISPF中使用的命令"></a>SDSF、ISPF中使用的命令</h3><p>L MENBER                 定位MENBER<br>FIND COND                 在MSG中找COND   F5查找下一个COND<br>S MEMBER1 ; COPY MENBER2             拷贝MENBER2生成MENBER1<br>C NAME1 NAME2 ALL     将字符NAME1全部换成NAME2<br>MAXCC最大返回码</p>
 <hr>
 <h3 id="主机系统相关概念"><a href="#主机系统相关概念" class="headerlink" title="主机系统相关概念"></a>主机系统相关概念</h3><p>DD实现语句覆盖，作业步EXEC，执行顺序自顶向下<br>主机中不存在路径的概念，名字唯一（存在段、编目和索引）<br>主编目上包括3个必须的：system data sets（系统数据集的入口）,alias（别名）,user catalog pointer<br>BOOTSTRAP 清除缓存，配置文件，恢复的指定，可IPL（初始化程序加载）<br>主机系统启动过程：1）硬件上电，灯泡闪烁。2）将系统启动所需要的子程序子任务参数进行配置，3）配置完成之后启动相关子程序参数<br>主机上地址空间的三种类型：STC TSU（active） JOB<br>HLQ高级限定词（alias）     USERID<br>卷上的目录结构分两种：BCS基本目录结构，VVDS（VSAM目录结构） SMS存储管理子系统<br>主机系统中job执行的6个步骤：INPUT CONVERSION EXECUTION OUTPUT HARDCOPY PURGE（spool space、job ）<br>resource：（1）profile离散、通用（2）通用资源TSOPROC等四个类</p>
@@ -213,109 +140,136 @@
 <p>各用户之间的数据集的访问权限<br>//IBMUSERA JOB 2017,’Z,W,Q’,MSGCLASS=A,MSGLEVEL=(1,1),<br>//       NOTIFY=&amp;SYSUID,CLASS=A,REGION=6M<br>//RACF09   EXEC PGM=IKJEFT01,DYNAMNBR=20<br>//SYSTSPRT DD SYSOUT=<em><br>//SYSTSIN  DD </em><br>   ADDSD ‘SA001.<em>‘ OWNER(SA001) UACC(NONE)<br>   ADDSD ‘SA002.</em>‘ OWNER(SA002) UACC(NONE)<br>   ADDSD ‘SA003.<em>‘ OWNER(SA003) UACC(NONE)<br>   ADDSD ‘SA004.</em>‘ OWNER(SA004) UACC(NONE)<br>   ADDSD ‘SA005.<em>‘ OWNER(SA005) UACC(NONE)<br>/</em></p>
 <hr>
 
-        </div>
-      </article>
-    </div>
-    <!-- Pre or Next -->
-    
-	<div class="container" >
-           <ul class="pager">
-    	     
-      	     <li class="previous">
-              <a href="/2017/08/08/bitmap/" rel="prev">下一篇</a>
-             </li>
-           
-           
-              <li class="next">
-              <a href="/2017/06/30/cics/" rel="prev">上一篇</a>
-            </li>
-           
-          </ul>
-       </div>
-　　　　<!-- Comments -->
-    <div class="container">
       
-<section id="comment">
-  <!-- <h1 class="title">Comments</h1> -->
-
-  
-    <!-- 多说评论框 start -->
-        <script type="text/javascript">
-var duoshuoQuery = {short_name:"evilinf"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-    <div class="ds-thread" data-thread-key="post-ibmjclm" data-title="IBM大型机系统管理" data-url="https://evilinf.github.io/2017/07/12/ibmjclm/"></div>
-    <!-- 多说评论框 end -->
-  
-</section>
-
-
     </div>
-   
-　　　　
+    <footer class="article-footer">
+      <a data-url="https://evilinf.github.io/2017/07/12/ibmjclm/" data-id="cjf6sdlro000ehgqlkk5j8kc3" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
-</div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/08/bitmap/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          bitmap实现“属性标签化”
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/06/30/cics/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">cics讲解</div>
+    </a>
+  
+</nav>
 
+  
+</article>
 
-  <!-- Footer -->
-  <!-- Footer-widgets -->
-<div class="footer-widgets">
-      <div class="header-content">
-        <div class="header-info-link">
-          
-            
-              <a href="https://github.com/evilinf" class="icon icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            
-              <a href="https://www.zhihu.com/people/hui-liu-lei-de-yu-54" class="icon icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            
-              <a href="https://www.facebook.com/profile.php?id=100012241389629" class="icon icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            
-          
-        </div>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/书本知识总结/">书本知识总结</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/读书笔记/">读书笔记</a></li></ul>
     </div>
-</div>
-<!-- Footer -->
-<footer class="site-info">
-  <p>
-    <span>Evilinf &copy; 2018</span>
+  </div>
+
+
+  
     
-      <span class="split">|</span>
-      <span>The Sea of Evilinf</span>
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/书本知识总结/" style="font-size: 10px;">书本知识总结</a> <a href="/tags/读书笔记/" style="font-size: 10px;">读书笔记</a>
+    </div>
+  </div>
+
+  
     
-  </p>
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/05/">May 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/24/program/">Software CookBook</a>
+          </li>
+        
+          <li>
+            <a href="/2017/09/11/writtenExam/">笔试</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/08/bitmap/">bitmap实现“属性标签化”</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/12/ibmjclm/">IBM大型机系统管理</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/30/cics/">cics讲解</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 evilinf<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
 </footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 
-  <!-- After footer scripts -->
-  <!-- scripts -->
-<script src="/js/app.js"></script>
-
-  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:'evilinf'};
-      (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-      })();
-      </script>
-    <!-- 多说公共JS代码 end -->
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
+<script src="/js/script.js"></script>
 
+  </div>
 </body>
-
 </html>
