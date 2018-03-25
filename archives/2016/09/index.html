@@ -8,12 +8,10 @@
 
   <!--Description-->
   
-  <meta name="description" content="装B 显摆 寻求知己">
-  
 
   <!--Author-->
   
-  <meta name="author" content="会流泪的鱼">
+  <meta name="author" content="evilinf">
   
 
   <!--Open Graph Title-->
@@ -21,8 +19,6 @@
       <meta property="og:title" content="Evilinf"/>
   
   <!--Open Graph Description-->
-  
-      <meta property="og:description" content="装B 显摆 寻求知己" />
   
   <!--Open Graph Site Name-->
   <meta property="og:site_name" content="Evilinf"/>
@@ -46,7 +42,7 @@
     </script>
   <!-- Title -->
   
-  <title>归档：2016/9 - Evilinf</title>
+  <title>Archives: 2016/9 - Evilinf</title>
 
 
   <link rel="shortcut icon" href="http://odhn7mrx6.bkt.clouddn.com/logo.jpg">
@@ -168,6 +164,15 @@
             
   <li>
     <span class="date">
+      2018-03-25
+    </span>
+    <a href="/2018/03/25/hello-world/" class="title">
+      Hello World
+    </a>
+  </li>
+
+  <li>
+    <span class="date">
       2018-03-24
     </span>
     <a href="/2018/03/24/program/" class="title">
@@ -239,8 +244,8 @@
     <span class="date">
       2017-05-02
     </span>
-    <a href="/2017/05/02/finance/" class="title">
-      融资
+    <a href="/2017/05/02/film/" class="title">
+      电影推荐
     </a>
   </li>
 
@@ -248,8 +253,8 @@
     <span class="date">
       2017-05-02
     </span>
-    <a href="/2017/05/02/film/" class="title">
-      电影推荐
+    <a href="/2017/05/02/finance/" class="title">
+      融资
     </a>
   </li>
 
@@ -354,30 +359,27 @@
 <div class="footer-widgets">
       <div class="header-content">
         <div class="header-info-link">
-          
-            
-              <a href="https://github.com/evilinf" class="icon icon-github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            
-              <a href="https://www.zhihu.com/people/hui-liu-lei-de-yu-54" class="icon icon-twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            
-              <a href="https://www.facebook.com/profile.php?id=100012241389629" class="icon icon-facebook" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            
-          
+          <% if (config.social) { %>
+            <% _.forIn(config.social, function(val, key){ %>
+              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+            <% }) %>
+          <% } else { %>
+            <% _.forIn(theme.social, function(val, key){ %>
+              <a href="<%- val %>" class="icon icon-<%- key %>" target="_blank"><i class="fa fa-<%- key %>" aria-hidden="true"></i></a>
+            <% }) %>
+          <% } %>
         </div>
     </div>
 </div>
 <!-- Footer -->
 <footer class="site-info">
   <p>
-    <span>Evilinf &copy; 2018</span>
-    
+    <span><%- config.title %> &copy; <%= (new Date()).getFullYear() %></span>
+    <% if(config.footer !== null) { %>
       <span class="split">|</span>
-      <span>The Sea of Evilinf</span>
-    
+      <span><%- config.footer || theme.footer %></span>
+    <% } %>
   </p>
-  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  本站总访问量<span id="busuanzi_value_site_pv"></span>次
-  本站访客数<span id="busuanzi_value_site_uv"></span>人次
 </footer>
 
 
