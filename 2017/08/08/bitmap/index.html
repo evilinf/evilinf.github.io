@@ -88,19 +88,19 @@
 
 
 <meta name="description" content="原文地址：http://mp.weixin.qq.com/s/tLL9IB5Tj8486lf11EAskQ
-原本统计求交集的SQL语句为：SELECT COUNT(distinct name) as 用户数 from 用户表 where 属性1=’值’ and 属性2=’值’……标签较少的话还可以，但是用户或标签变多查询的性能会大大降低bitmap思想操作：    建立用户名和用户ID的映射；">
+原本统计求交集的SQL语句为：SELECT COUNT(distinct name) as 用户数 from 用户表 where 属性1=’值’ and 属性2=’值’……标签较少的话还可以，但是用户或标签变多查询的性能会大大降低bitmap思想操作    建立用户名和用户ID的映射">
 <meta property="og:type" content="article">
 <meta property="og:title" content="bitmap实现“属性标签化”">
 <meta property="og:url" content="https://evilinf.github.io/2017/08/08/bitmap/index.html">
 <meta property="og:site_name" content="Evilinf">
 <meta property="og:description" content="原文地址：http://mp.weixin.qq.com/s/tLL9IB5Tj8486lf11EAskQ
-原本统计求交集的SQL语句为：SELECT COUNT(distinct name) as 用户数 from 用户表 where 属性1=’值’ and 属性2=’值’……标签较少的话还可以，但是用户或标签变多查询的性能会大大降低bitmap思想操作：    建立用户名和用户ID的映射；">
+原本统计求交集的SQL语句为：SELECT COUNT(distinct name) as 用户数 from 用户表 where 属性1=’值’ and 属性2=’值’……标签较少的话还可以，但是用户或标签变多查询的性能会大大降低bitmap思想操作    建立用户名和用户ID的映射">
 <meta property="og:image" content="http://odhn7mrx6.bkt.clouddn.com/tag.JPG">
-<meta property="og:updated_time" content="2017-09-11T13:59:39.086Z">
+<meta property="og:updated_time" content="2018-04-04T11:16:34.767Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bitmap实现“属性标签化”">
 <meta name="twitter:description" content="原文地址：http://mp.weixin.qq.com/s/tLL9IB5Tj8486lf11EAskQ
-原本统计求交集的SQL语句为：SELECT COUNT(distinct name) as 用户数 from 用户表 where 属性1=’值’ and 属性2=’值’……标签较少的话还可以，但是用户或标签变多查询的性能会大大降低bitmap思想操作：    建立用户名和用户ID的映射；">
+原本统计求交集的SQL语句为：SELECT COUNT(distinct name) as 用户数 from 用户表 where 属性1=’值’ and 属性2=’值’……标签较少的话还可以，但是用户或标签变多查询的性能会大大降低bitmap思想操作    建立用户名和用户ID的映射">
 <meta name="twitter:image" content="http://odhn7mrx6.bkt.clouddn.com/tag.JPG">
 
 
@@ -328,7 +328,7 @@
       
         <p><link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><br><img class="img-thumbnail" src="http://odhn7mrx6.bkt.clouddn.com/tag.JPG" alt="标签"></p>
 <p></p><p>原文地址：</p><a href="http://mp.weixin.qq.com/s/tLL9IB5Tj8486lf11EAskQ" target="_blank" rel="external">http://mp.weixin.qq.com/s/tLL9IB5Tj8486lf11EAskQ</a><p></p>
-<div class="container"><br><p>原本统计求交集的SQL语句为：SELECT COUNT(distinct name) as 用户数 from 用户表 where 属性1=’值’ and 属性2=’值’……</p><br><p>标签较少的话还可以，但是用户或标签变多查询的性能会大大降低</p><br><h3>bitmap思想操作：</h3><br>    <ul><li>建立用户名和用户ID的映射；</li><br>    <li>让每一个标签存储包含此标签的所有的用户ID，每个标签都是一个独立的bitmap；</li><br>    <li>这样，实现用户的去重和查询统计，就变得一目了然。</li></ul><br><h3>优点：</h3><br>    <ul><li>Hashset和Hashmap，每个用户的ID需要存储为int类型，而用户在bitmap中只占一个bit，内存节省；</li><br>    <li>在做交集和并集运算时，性能较快。</li><ul><br><h3>缺点：</h3><br>    <p>不支持非运算。</p><br><b>RoaringBitmap</b>   <br>              <b>EWAHCompressedBitmap</b> <br><br></ul></ul></div>
+<div class="container"><br><p>原本统计求交集的SQL语句为：SELECT COUNT(distinct name) as 用户数 from 用户表 where 属性1=’值’ and 属性2=’值’……</p><br><p>标签较少的话还可以，但是用户或标签变多查询的性能会大大降低</p><br><h3>bitmap思想操作</h3><br>    <ul><li>建立用户名和用户ID的映射</li><br>    <li>让每一个标签存储包含此标签的所有的用户ID，每个标签都是一个独立的bitmap</li><br>    <li>这样，实现用户的去重和查询统计，就变得一目了然</li></ul><br><h3>优点</h3><br>    <ul><li>Hashset和Hashmap，每个用户的ID需要存储为int类型，而用户在bitmap中只占一个bit，内存节省</li><br>    <li>在做交集和并集运算时，性能较快</li><ul><br><h3>缺点</h3><br>    <ul><li>不支持非运算</li></ul><br><p>RoaringBitmap</p>   <br>              <p>EWAHCompressedBitmap</p> <br><br></ul></ul></div>
       
     </div>
 
@@ -490,7 +490,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">bitmap思想操作：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">优点：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">缺点：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">bitmap思想操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">缺点</span></a></li></ol></div>
             
 
           </div>
