@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://evilinf.github.io/2017/07/12/ibmjclm/index.html">
 <meta property="og:site_name" content="Evilinf">
 <meta property="og:description" content="SDSF、ISPF中使用的命令L MENBER                 定位MENBERFIND COND                 在MSG中找COND   F5查找下一个CONDS MEMBER1 ; COPY MENBER2             拷贝MENBER2生成MENBER1C NAME1 NAME2 ALL     将字符NAME1全部换成NAME2MAXCC最大">
-<meta property="og:updated_time" content="2018-04-04T11:27:11.181Z">
+<meta property="og:updated_time" content="2018-04-04T12:14:00.372Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IBM大型机系统管理">
 <meta name="twitter:description" content="SDSF、ISPF中使用的命令L MENBER                 定位MENBERFIND COND                 在MSG中找COND   F5查找下一个CONDS MEMBER1 ; COPY MENBER2             拷贝MENBER2生成MENBER1C NAME1 NAME2 ALL     将字符NAME1全部换成NAME2MAXCC最大">
@@ -325,6 +325,7 @@
 <h3 id="SDSF、ISPF中使用的命令"><a href="#SDSF、ISPF中使用的命令" class="headerlink" title="SDSF、ISPF中使用的命令"></a>SDSF、ISPF中使用的命令</h3><p>L MENBER                 定位MENBER<br>FIND COND                 在MSG中找COND   F5查找下一个COND<br>S MEMBER1 ; COPY MENBER2             拷贝MENBER2生成MENBER1<br>C NAME1 NAME2 ALL     将字符NAME1全部换成NAME2<br>MAXCC最大返回码</p>
 <hr>
 <h3 id="主机系统相关概念"><a href="#主机系统相关概念" class="headerlink" title="主机系统相关概念"></a>主机系统相关概念</h3><p>DD实现语句覆盖，作业步EXEC，执行顺序自顶向下<br>主机中不存在路径的概念，名字唯一（存在段、编目和索引）<br>主编目上包括3个必须的：system data sets（系统数据集的入口）,alias（别名）,user catalog pointer<br>BOOTSTRAP 清除缓存，配置文件，恢复的指定，可IPL（初始化程序加载）<br>主机系统启动过程：1）硬件上电，灯泡闪烁。2）将系统启动所需要的子程序子任务参数进行配置，3）配置完成之后启动相关子程序参数<br>主机上地址空间的三种类型：STC TSU（active） JOB<br>HLQ高级限定词（alias）     USERID<br>卷上的目录结构分两种：BCS基本目录结构，VVDS（VSAM目录结构） SMS存储管理子系统<br>主机系统中job执行的6个步骤：INPUT CONVERSION EXECUTION OUTPUT HARDCOPY PURGE（spool space、job ）<br>resource：（1）profile离散、通用（2）通用资源TSOPROC等四个类</p>
+<hr>
 <h3 id="查找顺序"><a href="#查找顺序" class="headerlink" title="查找顺序"></a>查找顺序</h3><p>编目数据集的查找顺序：<br>      主编目-》别名-》用户编目-》VTOC（volume table of contents）-》数据集<br>      主编目-》别名-》系统数据集<br>没编目数据集的查找顺序：<br>      volume（卷名）-》VTOC（卷目录列表）-》数据集</p>
 <hr>
 <h3 id="IBM主机虚拟机Hercules启动步骤"><a href="#IBM主机虚拟机Hercules启动步骤" class="headerlink" title="IBM主机虚拟机Hercules启动步骤"></a>IBM主机虚拟机Hercules启动步骤</h3><p>（1）启动虚拟机Hercules<br>（2）打开pcomm    端口23<br>（3）command / power on                       Hercules      加载卷    上电<br>（4）启动IPL command /  IPL/Load                Hercules  数据交换  闪  pcomm发生变化<br>（5）查看活跃任务  D A,L                         pcomm<br>（6）回复高量信息  例如：02，term               pcomm<br>（7）S TSO(启动）                                 pcomm<br>（8）file/运行同一个                               pcomm<br>（9） L TSO (登录)<br>(10) 账户:IBMUSER 密码DJTUIBM        根据实际情况而定</p>
