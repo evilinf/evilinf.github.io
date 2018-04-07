@@ -247,6 +247,135 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://evilinf.github.io/2018/04/07/jvm/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="evilinf">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Evilinf">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2018/04/07/jvm/" itemprop="url">
+                  深入理解Java虚拟机：JVM高级特性与最佳实践
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-07T18:47:08+08:00">
+                2018-04-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="走进Java（1）"><a href="#走进Java（1）" class="headerlink" title="走进Java（1）"></a>走进Java（1）</h3><p>OpenJDK</p>
+<hr>
+<h3 id="自动内存管理机制（2-5）"><a href="#自动内存管理机制（2-5）" class="headerlink" title="自动内存管理机制（2-5）"></a>自动内存管理机制（2-5）</h3><p>虚拟机中内存是如何划分的，以及哪部分区域、什么样的代码和操作可能导致内存溢出异常，并讲解了各个区域出现内存溢出异常的常见原因。<br>分析了垃圾收集的算法和JDK1.7中提供的几款垃圾收集器的特性及运作原理。通过代码实例验证了Java虚拟机自动内存分配及回收的主要规则。<br>介绍了随JDK发布的6个命令行工具和两个可视化的故障处理的使用方法。</p>
+<hr>
+<h3 id="虚拟机执行子系统（6-9）"><a href="#虚拟机执行子系统（6-9）" class="headerlink" title="虚拟机执行子系统（6-9）"></a>虚拟机执行子系统（6-9）</h3><p>讲解了Class文件结构中的各个组成部分，以及每个部分的定义、数据结构和使用方法，以实战的方式演示了Class文件的数据是如何存储和访问的。<br>介绍了类加载过程的“加载”、“验证”、“准备”、“解析”和“初始化”5个阶段中虚拟机分别执行了哪些动作，还介绍了类加载器的工作原理及其对虚拟机的意义。<br>分析了虚拟机在执行代码时如何找到正确的方法，如何执行方法内的字节码，以及执行代码时涉及到的内存结构。</p>
+<hr>
+<h3 id="程序编译与代码优化（10-11）"><a href="#程序编译与代码优化（10-11）" class="headerlink" title="程序编译与代码优化（10-11）"></a>程序编译与代码优化（10-11）</h3><p>分析了Java语言中泛型、主动装箱和拆箱、条件编译等多种语法糖的前因后果，并通过实战演示了如何使用插入式注解处理器来实现一个检查程序命名规范的编译器插件。<br>讲解了虚拟机的热点探测方法、HotSpot的即时编译器、编译触发条件，以及如何从虚拟机外部观察和分析JIT编译的数据和结果，此外，还讲解了几种常见的编译优化技术。</p>
+<hr>
+<h3 id="高效并发（12-13）"><a href="#高效并发（12-13）" class="headerlink" title="高效并发（12-13）"></a>高效并发（12-13）</h3><p>讲解了虚拟机Java内存模型的结构及操作，以及原子性、可见性和有序性在Java内存模型中的体现，介绍了先行发生原则的规则及使用，还了解了线程在Java语言中是如何实现的。<br>介绍了线程安全涉及的概念和分类、同步实现的方式及虚拟机的底层运作原理，并介绍了虚拟机实现高效并发所采取的一系列锁优化措施。</p>
+<hr>
+<h3 id="虚拟机拓展途径推荐"><a href="#虚拟机拓展途径推荐" class="headerlink" title="虚拟机拓展途径推荐"></a>虚拟机拓展途径推荐</h3><p><a href="http://hllvm.group.iteye.com/" target="_blank" rel="external">高级语言虚拟机圈子</a><br><a href="http://www.iteye.com/" target="_blank" rel="external">圈主RednaxelaFX（莫枢）的博客</a><br><a href="http://openjdk.java.net/groups/hotspot/" target="_blank" rel="external">关于HotSpot虚拟机的最新讨论</a></p>
+<hr>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://evilinf.github.io/2018/04/06/topicjava/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -325,7 +454,7 @@
         
           
             <h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h4><p><font class="text-danger">goto与const是否为关键字？true、false与null是什么？</font><br>goto与const是关键字，还是保留字。true、false与null是字面常量，不是关键字。<br>在C/C++等语言中，使用goto可以实现程序的跳转，从某些方面来说其提供了一定的方便性，例如，在多重嵌套的循环中，可以直接从内层循环中跳出外层循环。然而，这种跳转却没有任何限制，可以随意地进行，从而打破了正常的程序流程。如果程序中多处使用goto，不仅降低程序的可读性，也会对程序的维护与更新造成影响。因此。为了避免这种情况，java语言取消了goto的使用，取而代之的是使用循环标签。但是，为了避免程序员自行使用goto带来同样的混乱性（例如将方法或变量的名称声明为goto），Java语言仍将goto定义为一个关键字，故也称为“保留字”。const同理，C/C++里面用于声明一个常量，java中用static来实现。<br>关键字：</p>
-<table class="table table-hover" style="margin-top:-100px;"><br>  <tr><td>abstract</td><td>assert</td><td>boolean</td><td>break</td><td>byte</td></tr><br>  <tr　class="text-danger"><td>case</td><td>catch</td><td>char</td><td>class</td><td>const</td><br>  <tr><td>continue</td><td>default</td><td>do</td><td>double</td><td>else</td></tr><br>  <tr　class="text-danger"><td>enum</td><td>extends</td><td>final</td><td>finally</td><td>float</td><br>  <tr><td>for</td><td>goto</td><td>if</td><td>implements</td><td>import</td></tr><br>  <tr　class="text-danger"><td>instanceof</td><td>int</td><td>interface</td><td>long</td><td>native</td><br>  <tr><td>new</td><td>package</td><td>private</td><td>protected</td><td>public</td></tr><br>  <tr　class="text-danger"><td>return</td><td>short</td><td>static</td><td>strictfp</td><td>super</td><br>  <tr><td>switch</td><td>synchronized</td><td>this</td><td>throw</td><td>throws</td></tr><br>  <tr　class="text-danger"><td>transient</td><td>try</td><td>void</td><td>volatile</td><td>while</td><br></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></table>
+<table class="table table-hover" style="margin-top:-200px;"><br>  <tr><td>abstract</td><td>assert</td><td>boolean</td><td>break</td><td>byte</td></tr><br>  <tr　class="text-danger"><td>case</td><td>catch</td><td>char</td><td>class</td><td>const</td><br>  <tr><td>continue</td><td>default</td><td>do</td><td>double</td><td>else</td></tr><br>  <tr　class="text-danger"><td>enum</td><td>extends</td><td>final</td><td>finally</td><td>float</td><br>  <tr><td>for</td><td>goto</td><td>if</td><td>implements</td><td>import</td></tr><br>  <tr　class="text-danger"><td>instanceof</td><td>int</td><td>interface</td><td>long</td><td>native</td><br>  <tr><td>new</td><td>package</td><td>private</td><td>protected</td><td>public</td></tr><br>  <tr　class="text-danger"><td>return</td><td>short</td><td>static</td><td>strictfp</td><td>super</td><br>  <tr><td>switch</td><td>synchronized</td><td>this</td><td>throw</td><td>throws</td></tr><br>  <tr　class="text-danger"><td>transient</td><td>try</td><td>void</td><td>volatile</td><td>while</td><br></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></table>
 
 <hr>
 <h3 id="运算符与表达式"><a href="#运算符与表达式" class="headerlink" title="运算符与表达式"></a>运算符与表达式</h3><hr>
@@ -1402,130 +1531,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://evilinf.github.io/2017/05/02/film/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="evilinf">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Evilinf">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/05/02/film/" itemprop="url">
-                  电影推荐
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-02T09:16:25+08:00">
-                2017-05-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h3 id="霸王别姬"><a href="#霸王别姬" class="headerlink" title="霸王别姬"></a>霸王别姬</h3><p><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=200233702,1638734763&fm=58" width="200" height="100"><br>不疯魔不成活</p>
-<h3 id="忠犬八公"><a href="#忠犬八公" class="headerlink" title="忠犬八公"></a>忠犬八公</h3><p><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1904663101,1849250538&fm=58" width="200" height="100"><br>简单温暖</p>
-<h3 id="为奴十二载"><a href="#为奴十二载" class="headerlink" title="为奴十二载"></a>为奴十二载</h3><p><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2414577942,2161183233&fm=58" width="200" height="100"><br>走进黑奴时代</p>
-<h3 id="辛德勒的名单"><a href="#辛德勒的名单" class="headerlink" title="辛德勒的名单"></a>辛德勒的名单</h3><p><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2672621546,2335218215&fm=58" width="200" height="100"><br>犹太人的黑历史，一个纳粹党员的救赎</p>
-<h3 id="雪国列车"><a href="#雪国列车" class="headerlink" title="雪国列车"></a>雪国列车</h3><p><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2012710894,3017719162&fm=58" width="200" height="100"><br>一辆列车，一个世界，诠释了阶级、平衡、定律……</p>
-<h3 id="肖申克的救赎"><a href="#肖申克的救赎" class="headerlink" title="肖申克的救赎"></a>肖申克的救赎</h3><p><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=1877513227,2384274294&fm=58" width="200" height="100"><br>耐力、智慧、希望……</p>
-<h3 id="阿甘正传"><a href="#阿甘正传" class="headerlink" title="阿甘正传"></a>阿甘正传</h3><p><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=519647866,132959257&fm=58" width="200" height="100"><br>最简单、纯粹的智慧</p>
-<h3 id="被操纵的城市"><a href="#被操纵的城市" class="headerlink" title="被操纵的城市"></a>被操纵的城市</h3><h3 id="与神同行"><a href="#与神同行" class="headerlink" title="与神同行"></a>与神同行</h3>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1575,7 +1580,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">Artikel</span>
               </a>
             </div>
