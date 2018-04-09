@@ -93,7 +93,7 @@
 <meta property="og:url" content="https://evilinf.github.io/2018/04/06/topicjava/index.html">
 <meta property="og:site_name" content="Evilinf">
 <meta property="og:description" content="基本概念关键字goto与const是否为关键字？true、false与null是什么？  goto与const是关键字，还是保留字。true、false与null是字面常量，不是关键字。  在C/C++等语言中，使用goto可以实现程序的跳转，从某些方面来说其提供了一定的方便性，例如，在多重嵌套的循环中，可以直接从内层循环中跳出外层循环。然而，这种跳转却没有任何限制，可以随意地进行，从而打破了正常">
-<meta property="og:updated_time" content="2018-04-09T13:02:18.121Z">
+<meta property="og:updated_time" content="2018-04-09T13:14:05.501Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java深入解析-透析Java本质的36个话题">
 <meta name="twitter:description" content="基本概念关键字goto与const是否为关键字？true、false与null是什么？  goto与const是关键字，还是保留字。true、false与null是字面常量，不是关键字。  在C/C++等语言中，使用goto可以实现程序的跳转，从某些方面来说其提供了一定的方便性，例如，在多重嵌套的循环中，可以直接从内层循环中跳出外层循环。然而，这种跳转却没有任何限制，可以随意地进行，从而打破了正常">
@@ -196,7 +196,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -206,7 +206,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -283,7 +283,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-06T18:52:37+08:00">
                 2018-04-06
@@ -322,30 +322,18 @@
 
       
         <h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h4><p><font class="text-danger">goto与const是否为关键字？true、false与null是什么？</font><br>  goto与const是关键字，还是保留字。true、false与null是字面常量，不是关键字。<br>  在C/C++等语言中，使用goto可以实现程序的跳转，从某些方面来说其提供了一定的方便性，例如，在多重嵌套的循环中，可以直接从内层循环中跳出外层循环。然而，这种跳转却没有任何限制，可以随意地进行，从而打破了正常的程序流程。如果程序中多处使用goto，不仅降低程序的可读性，也会对程序的维护与更新造成影响。因此。为了避免这种情况，java语言取消了goto的使用，取而代之的是使用循环标签。但是，为了避免程序员自行使用goto带来同样的混乱性（例如将方法或变量的名称声明为goto），Java语言仍将goto定义为一个关键字，故也称为“保留字”。const同理，C/C++里面用于声明一个常量，java中用static来实现。<br><b>关键字：</b></p>
-<p><table class="table table-hover" style="margin-top:-230px;"><br>  <tr><td>abstract</td><td>assert</td><td>boolean</td><td>break</td><td>byte</td></tr><br>  <tr　class="text-danger"><td>case</td><td>catch</td><td>char</td><td>class</td><td>const</td><br>  <tr><td>continue</td><td>default</td><td>do</td><td>double</td><td>else</td></tr><br>  <tr　class="text-danger"><td>enum</td><td>extends</td><td>final</td><td>finally</td><td>float</td><br>  <tr><td>for</td><td>goto</td><td>if</td><td>implements</td><td>import</td></tr><br>  <tr　class="text-danger"><td>instanceof</td><td>int</td><td>interface</td><td>long</td><td>native</td><br>  <tr><td>new</td><td>package</td><td>private</td><td>protected</td><td>public</td></tr><br>  <tr　class="text-danger"><td>return</td><td>short</td><td>static</td><td>strictfp</td><td>super</td><br>  <tr><td>switch</td><td>synchronized</td><td>this</td><td>throw</td><td>throws</td></tr><br>  <tr　class="text-danger"><td>transient</td><td>try</td><td>void</td><td>volatile</td><td>while</td><br></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></table></p>
-<pre>
-package chapter1;
-public class GotoTest{
-  public static void main(String[] args){
-    int[][] array={
-      {1,20,38},
-      {28,90},
-      {60,46,71,100}
-    };
-    //int goto=0; 错误，不能使用goto作为标识符。
-    int number=0;
-    outer:
-    for(int i=0;i<array.length;i++){ for(int="" j="0;j<array[i].length;j++){" system.out.println(array[i][j]);="" number++;="" if(number="=5){" goto="" here;错误，在java中没有这种语法。="" break="" outer;="" 使用循环标签代替goto。="" }="" here:="" system.out.println(number);="" <="" pre="">
+<table class="table table-hover" style="margin-top:-230px;"><br>  <tr><td>abstract</td><td>assert</td><td>boolean</td><td>break</td><td>byte</td></tr><br>  <tr　class="text-danger"><td>case</td><td>catch</td><td>char</td><td>class</td><td>const</td><br>  <tr><td>continue</td><td>default</td><td>do</td><td>double</td><td>else</td></tr><br>  <tr　class="text-danger"><td>enum</td><td>extends</td><td>final</td><td>finally</td><td>float</td><br>  <tr><td>for</td><td>goto</td><td>if</td><td>implements</td><td>import</td></tr><br>  <tr　class="text-danger"><td>instanceof</td><td>int</td><td>interface</td><td>long</td><td>native</td><br>  <tr><td>new</td><td>package</td><td>private</td><td>protected</td><td>public</td></tr><br>  <tr　class="text-danger"><td>return</td><td>short</td><td>static</td><td>strictfp</td><td>super</td><br>  <tr><td>switch</td><td>synchronized</td><td>this</td><td>throw</td><td>throws</td></tr><br>  <tr　class="text-danger"><td>transient</td><td>try</td><td>void</td><td>volatile</td><td>while</td><br></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></tr　class="text-danger"></table>
 
+<p>package chapter1;<br>public class GotoTest{<br>  public static void main(String[] args){<br>    int[][] array={<br>      {1,20,38},<br>      {28,90},<br>      {60,46,71,100}<br>    };<br>    //int goto=0; 错误，不能使用goto作为标识符。<br>    int number=0;<br>    outer:<br>    for(int i=0;i&lt;array.length;i++){<br>      for(int j=0;j&lt;array[i].length;j++){<br>        System.out.println(array[i][j]);<br>        number++;<br>        if(number==5){<br>          //goto here;错误，在Java中没有这种语法。<br>          break outer;//使用循环标签代替goto。<br>        }<br>      }<br>    }<br>    here:<br>    System.out.println(number);<br>  }<br>}</p>
 <h4 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h4><p>  在Java语言中，标识符是区分大小写的，仅当两个标识符的Unicode字符序列完全相同时，这两个标识符才是相同的。<br>  标识符的首字符所对应的代码点必须使得Character类的isJavaIdentifierStart方法返回值为true，后续字符（如果存在后续字符的话）<br>所对应的代码点必须使得Character类的isJavaIdentifierPart方法返回值为true。并且不能与关键字、布尔字面常量（true、false）和<br>引用字面常量（null）相同。<br>  应该避免在标识符中使用”$”，尽管”$”可以在标识符中使用，但可能会与编译器的命名相冲突。<br>  当标识符的所有字符都是除了null之外的ASCII字符时，其最大长度可以达到65535（2的16次方-1），如果超过了这个长度，编译器将产生错误信息。</p>
-<p><pre><br>package chapter1;<br>public class ValidIdentifier{<br>  public static void main(String args[]){<br>    int startNumber=0;<br>    int partNumber=0;<br>    for(int i=0x0000;i&lt;=0x10ffff;i++){<br>      if(Character.isJavaIdentifierStart(i)){<br>        startNumber++;<br>      }<br>      if(Character.isJavaIdentifierPart(i)){<br>        partNumber++;<br>      }<br>    }<br>    System.out.println(“Unicode字符集个数：”+(0x10ffff+1));<br>    System.out.println(“可作为标识符首字符的字符个数：”+startNumber);<br>    System.out.println(“可作为标识符一部分的字符个数：”+partNumber);<br>    System.out.println(“二者之差：”+(partNumber-startNumber));<br>  }<br>}<br></pre></p>
-<p><pre><br>package chapter1;<br>public class User$VIP{<br>  public static void main(String[] args){<br>    User user=new User();<br>    User.VIP vip=user.new VIP();<br>    vip.print();<br>  }<br>}<br>class User{<br>  class VIP{<br>    void print(){<br>      System.out.println(“成员类”);<br>    }<br>  }<br>}<br></pre></p>
+<p>package chapter1;<br>public class ValidIdentifier{<br>  public static void main(String args[]){<br>    int startNumber=0;<br>    int partNumber=0;<br>    for(int i=0x0000;i&lt;=0x10ffff;i++){<br>      if(Character.isJavaIdentifierStart(i)){<br>        startNumber++;<br>      }<br>      if(Character.isJavaIdentifierPart(i)){<br>        partNumber++;<br>      }<br>    }<br>    System.out.println(“Unicode字符集个数：”+(0x10ffff+1));<br>    System.out.println(“可作为标识符首字符的字符个数：”+startNumber);<br>    System.out.println(“可作为标识符一部分的字符个数：”+partNumber);<br>    System.out.println(“二者之差：”+(partNumber-startNumber));<br>  }<br>}</p>
+<p>package chapter1;<br>public class User$VIP{<br>  public static void main(String[] args){<br>    User user=new User();<br>    User.VIP vip=user.new VIP();<br>    vip.print();<br>  }<br>}<br>class User{<br>  class VIP{<br>    void print(){<br>      System.out.println(“成员类”);<br>    }<br>  }<br>}</p>
 <hr>
 <h3 id="运算符与表达式"><a href="#运算符与表达式" class="headerlink" title="运算符与表达式"></a>运算符与表达式</h3><hr>
 <h3 id="String类"><a href="#String类" class="headerlink" title="String类"></a>String类</h3><hr>
 <h3 id="方法、构造器与变量"><a href="#方法、构造器与变量" class="headerlink" title="方法、构造器与变量"></a>方法、构造器与变量</h3><hr>
 <h3 id="类与接口"><a href="#类与接口" class="headerlink" title="类与接口"></a>类与接口</h3><hr>
-</array.length;i++){></pre>
+
       
     </div>
 
@@ -442,10 +430,10 @@ public class GotoTest{
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -466,7 +454,7 @@ public class GotoTest{
             <div class="site-state-item site-state-posts">
               <a href="/archives">
                 <span class="site-state-item-count">20</span>
-                <span class="site-state-item-name">Artikel</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
@@ -479,7 +467,7 @@ public class GotoTest{
             <div class="site-state-item site-state-tags">
               
                 <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">Tags</span>
+                <span class="site-state-item-name">tags</span>
               
             </div>
           
@@ -545,7 +533,7 @@ public class GotoTest{
 
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
